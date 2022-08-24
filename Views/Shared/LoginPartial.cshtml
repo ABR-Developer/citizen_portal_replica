@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+@model Citizen_Portal.Models.User
+<div class="p-40p d-flex justify-content-center align-items-center">
+    <div class="px-10p py-20p bg-success border-dark border-4 radius-20p">
+        <div class="bg-white radius-20p p-10p">
+            <div class="flex flex-column align-center">
+                <div>
+                    <img class="circular-shadow radius-50 h-100p" src="~/lib/circular logo.png" alt="logo"/>
+                </div>
+                <div class="py-5p">
+                    <h1>Login</h1>                
+                </div>
+            </div>
+            <div class="py-10p">
+                <label>Don't Have an account ? </label>
+                <a class="px-10p text-danger text-decoration-none" asp-controller="Home" asp-action="Register">Register</a>
+            </div>
+            <div>
+                <form asp-controller="Home" asp-action="SignUp">
+                    <input class="w-100 font-md font-monospace" asp-for="CNIC" required pattern="" placeholder="Enter CNIC Number" maxlength="15"/>
+                    <hr />
+                    <input class="w-100  font-md font-monospace" asp-for="Password" placeholder="Enter Password" />
+                    <hr />
+                    <div class="py-15p">
+                        <input type="checkbox" />
+                        <label>Remember me</label>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-center align-content-center">
+                            <button class="py-5p px-25p border-dark-1 bg-warning fs-5" type="submit">Login</button>
+                        <div class="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@*@section s{
+    function allnumericplusminus(inputtxt) {
+    var numbers = /^[-+]?[0-9]+$/;
+    if(inputtxt.value.match(numbers))
+        {
+            alert('Correct...Try another');
+            document .form1.text1.focus();
+            return true;
+        }
+    else {
+        alert('Please input correct format');
+        document .form1.text1.focus();
+        return false;
+        }
+    }*@
+}

@@ -3,11 +3,11 @@
 }
 @model Citizen_Portal.Models.User
 <div class="bkgrnd-img d-flex justify-content-center align-items-center">
-    <div class="w-20 Auto px-10p py-20p bg-success border-dark border-4 radius-20p">
+    <div class="px-10p py-20p bg-success border-dark border-4 radius-20p">
         <div class="bg-white radius-20p p-10p">
             <div class="flex flex-column align-center">
                 <div>
-                    <img class="shx radius-50 h-100p" src="~/lib/circular logo.png" alt="logo"/>
+                    <img class="circular-shadow radius-50 h-100p" src="~/lib/circular logo.png" alt="logo"/>
                 </div>
                 <div class="py-5p">
                     <h1>Login</h1>                
@@ -19,7 +19,7 @@
             </div>
             <div>
                 <form asp-controller="Home" asp-action="SignUp">
-                    <input class="w-100 font-md font-monospace" asp-for="CNIC" placeholder="Enter CNIC Number"/>
+                    <input class="w-100 font-md font-monospace" asp-for="CNIC" required pattern="" placeholder="Enter CNIC Number" maxlength="15"/>
                     <hr />
                     <input class="w-100  font-md font-monospace" asp-for="Password" placeholder="Enter Password" />
                     <hr />
@@ -34,7 +34,7 @@
                                 <h3 class="text-dark">Login</h3>
                             </div>
                             <div>
-                                <button class="radius-50 bg-dark border-0 btn-outline-warning" type="submit"><h4>--></h4></button>
+                                <button class="radius-50 btn-outline-warning" type="submit"><h4>--></h4></button>
                             </div>
                         </div>
                     </div>
@@ -43,3 +43,19 @@
         </div>
     </div>
 </div>
+@*@section s{
+    function allnumericplusminus(inputtxt) {
+    var numbers = /^[-+]?[0-9]+$/;
+    if(inputtxt.value.match(numbers))
+        {
+            alert('Correct...Try another');
+            document .form1.text1.focus();
+            return true;
+        }
+    else {
+        alert('Please input correct format');
+        document .form1.text1.focus();
+        return false;
+        }
+    }*@
+}

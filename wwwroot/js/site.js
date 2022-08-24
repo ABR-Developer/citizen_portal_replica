@@ -2,3 +2,12 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+$document.ready(function() {
+    $get("#loginButton").click(function () {
+        $get("/Home/LoginPartial", function (result) {
+            alert(result)
+            //$get("#LoginInfo").html(result)
+        })
+    })
+})

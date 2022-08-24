@@ -3,7 +3,19 @@
     text-decoration: none;
 }
 
+.hover-move-right {
+    position: relative;
+    left: 0px;
+    transition: left 1s;
+}
 
+.hover-move-right:hover {
+    left:20px;
+}
+
+.bg-none{
+    background-color:transparent;
+}
 .Auto{
     margin: auto;
 }
@@ -79,6 +91,55 @@
 .w-100 {
     width: 100%;
 }
+
+.w-50p {
+    width: 50px;
+}
+.w-100p {
+    width: 100px;
+}
+.w-150p {
+    width: 150px;
+}
+.w-200p {
+    width: 200px;
+}
+.w-250p {
+    width: 250px;
+}
+.w-300p {
+    width: 300px;
+}
+.w-360p {
+    width: 360px;
+}
+.w-350p {
+    width: 350px;
+}
+.w-400p {
+    width: 400px;
+}
+.w-450p {
+    width: 450px;
+}
+.w-500p {
+    width: 500px;
+}
+.w-550p {
+    width: 550px;
+}
+.w-600p {
+    width: 600px;
+}
+.w-650p {
+    width: 650px;
+}
+.w-700p {
+    width: 700px;
+}
+.w-750p {
+    width: 750px;
+}
 /*----------- Height -----------*/
 .h-100p {
     height: 100px;
@@ -99,7 +160,60 @@
     height: 600px;
 }
 /*------------------------ Width-Heigt ---------------------------------*/
+/*------------------------ Border ---------------------------------*/
+.border-4p {
+    border: 4px;
+}
+.border-left-4p {
+    border-left: 4px;
+}
+.border-right-4p {
+    border-right: 4px;
+}
+.border-top-4p {
+    border-top: 4px;
+}
+.border-bottom-4p {
+    border-bottom: 4px;
+}
+.w74 {
+    word-wrap: break-word;
+}
+/*------------------------ Border ---------------------------------*/
+
 /*------------------------ Border-Radius ---------------------------------*/
+/*----------- 4px -----------*/
+.radius-4p{
+    border-radius:4px;
+}
+.radius-tl-4p{
+    border-top-left-radius:4px;
+}
+.radius-tr-4p{
+    border-top-right-radius:4px;
+}
+.radius-bl-4p{
+    border-bottom-left-radius:4px;
+}
+.radius-br-4p{
+    border-bottom-right-radius:4px;
+}
+/*----------- 5px -----------*/
+.radius-5p{
+    border-radius:5px;
+}
+.radius-tl-5p{
+    border-top-left-radius:5px;
+}
+.radius-tr-5p{
+    border-top-right-radius:5px;
+}
+.radius-bl-5p{
+    border-bottom-left-radius:5px;
+}
+.radius-br-5p{
+    border-bottom-right-radius:5px;
+}
 /*----------- 10px -----------*/
 .radius-10p{
     border-radius:10px;
@@ -158,6 +272,9 @@
 .p-5p{
     padding:5px;
 }
+.p-6p{
+    padding:6px;
+}
 .p-10p {
     padding: 10px;
 }
@@ -183,6 +300,10 @@
 .py-5p {
     padding-top: 5px;
     padding-bottom: 5px;
+}
+.py-6p {
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 .py-10p {
     padding-top: 10px;
@@ -216,6 +337,10 @@
 .px-5p {
     padding-right: 5px;
     padding-left: 5px;
+}
+.px-6p {
+    padding-right: 6px;
+    padding-left: 6px;
 }
 .px-10p {
     padding-right: 10px;
@@ -345,7 +470,63 @@
 }
 /*------------------------ Outline ---------------------------------*/
 /*------------------------ Shadow ---------------------------------*/
-.shx {
+.circular-shadow {
     box-shadow: 0 5px 10px rgba(0,0,0,0.6);
 }
 /*------------------------ Shadow ---------------------------------*/
+/*------------------------ Flex-item ---------------------------------*/
+/*----------- 1 / n -----------*/
+/*.flex-item-1{
+    flex:1 0 100%;
+}
+.flex-item-2{
+    flex:1 0 50%;
+}
+.flex-item-3{
+    flex:1 0 33.33%;
+}
+.flex-item-4{
+    flex:1 0 25%;
+}
+.flex-item-5{
+    flex:1 0 20%;
+}
+.flex-item-6{
+    flex:1 0 12.66%;
+}*/
+/*----------- m / n -----------*/
+.flex-item-2-3 {
+    flex: 1 0 66.66%;
+}
+/*----------- n% -----------*/
+.flex-item-10 {
+    flex: 1 0 10%;
+}
+.flex-item-20 {
+    flex: 1 0 20%;
+}
+.flex-item-30 {
+    flex: 1 0 30%;
+}
+.flex-item-40 {
+    flex: 1 0 40%;
+}
+.flex-item-50 {
+    flex: 1 0 50%;
+}
+.flex-item-60 {
+    flex: 1 0 60%;
+}
+.flex-item-70 {
+    flex: 1 0 70%;
+}
+.flex-item-80 {
+    flex: 1 0 80%;
+}
+.flex-item-90 {
+    flex: 1 0 90%;
+}
+.flex-item-100 {
+    flex: 1 0 100%;
+}
+/*------------------------ Flex-item ---------------------------------*/

@@ -1,0 +1,141 @@
+﻿
+@*<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="XpD49QZKcMLRjZ3qWHn6fgKotwJoyYjx6wE6WNcJ">
+
+    <title>Pakistan Citizen&#039;s Portal</title>
+
+    <link rel="shortcut icon" href="https://web.citizenportal.gov.pk/images/portal.png" />
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/fonts/iconic/css/material-design-iconic-font.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/css/util.css">
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/css/main.css">
+</head>
+<body>*@
+    <div class="d-flex flex-wrap">
+		<div class="col-md-4 p-30p ">
+			<div class="">
+				<a href="https://web.citizenportal.gov.pk" class="row">
+					<img class=""src="https://web.citizenportal.gov.pk/images/l3.png" alt="IMG">
+				</a>
+			</div>
+			<div class="p-40p">
+				<p class="text-secondary fs-4">
+					Welcome, Dear Citizen / Member!
+				</p>
+				<form class="py-40p px-10p border-4 border-dark">
+                    <div class="my-10p p-10p d-flex bg-warning bg-opacity-75">
+						<div class="col-md-5 d-flex justify-content-center align-items-center fs-6">Registered Citizen/Member:</div>
+                        <div class="col-md-5 d-flex justify-content-center align-items-center fs-6">Login here</div>
+						<div class="col-md-2 d-flex justify-content-center align-items-center fs-6 hover-move-right"><a id="loginButton" class="text-black fs-3"><i class="fas fa-long-arrow-alt-right"></i></a></div>
+					</div>
+                    <div class="my-10p p-10p d-flex bg-warning bg-opacity-75">
+						<div class="col-md-5 d-flex justify-content-center align-items-center fs-6">New Citizen/Member:</div>
+                        <div class="col-md-5 d-flex justify-content-center align-items-center fs-6">Register here</div>
+						<div class="col-md-2 d-flex justify-content-center align-items-center fs-6 hover-move-right"><a id="RegisterButton" class="text-black fs-3"><i class="fas fa-long-arrow-alt-right"></i></a></div>
+					</div>
+				</form>
+				<b><a class="text-primary fs-5 text-decoration-none" href="https://web.citizenportal.gov.pk/contact-us">Need Help ? Contact Us </a></b>
+			</div>
+			<div class="d-flex align-content-center justify-content-center">
+                <div class="col-md-4 text-secondary fs-3">
+					Follow us :
+                </div>
+                <div class="col-md-8 d-flex">
+                    <div class="col-md-4">
+       				    <a href="https://www.facebook.com/PMDUPakistan/" class="text-decoration-none text-secondary fs-1"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="col-md-4">
+    				    <a href="https://www.facebook.com/PMDUPakistan/" class="text-decoration-none text-secondary fs-1"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="col-md-4">
+    				    <a href="https://www.facebook.com/PMDUPakistan/" class="text-decoration-none text-secondary fs-1"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="col-md-8" style="background-image: url('/lib/BACKGROUND1.jpg');">
+            @*<div id="LoginInfo">
+                <partial name="LoginPartial"/>
+            </div>
+            <div id="RegisterInfo"">
+                <partial name="RegisterPartial"/>
+            </div>*@
+            <div id="LoginInfo">
+                @*<partial name="LoginPartial"/>*@
+            </div>
+            <div id="RegisterInfo"">
+                @*<partial name="RegisterPartial"/>*@
+            </div>
+@*                <partial name="LoginPartial"/>
+                <partial name="RegisterPartial"/>
+*@		</div>
+	</div>
+    @SectionWriters footer_script{
+        <script type="text/javascript" src="/js/site.js"></script>
+    }
+@*</body>
+
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/bootstrap/js/popper.js"></script>
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/tilt/tilt.jquery.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/js/main.js"></script>
+    
+        <script>
+        var banned = ['XXX'];
+          var aTags = document.getElementsByTagName("input");
+          for (var i=0;i<aTags.length;i++){
+              aTags[i].addEventListener('keyup', function(e) {
+              var text = $(this).val();
+              for (var x=0;x<banned.length;x++) {
+                  if (text.search(banned[x]) !== -1) {
+                      alert(banned[x]+' is not allowed!');
+                  }
+                  var regExp = new RegExp(banned[x]);
+                  text = text.replace(regExp,'');
+              }
+              $(this).val(text);
+              },false);
+          }
+        </script>
+
+        <script>
+        var banned = [ '!','@@','#','$','%','^','&','-','_','=',',','<','>','.','{' ,'}','|'];
+          var aTags = document.getElementsByClassName("specialchar");
+          for (var i=0;i<aTags.length;i++){
+              aTags[i].addEventListener('keyup', function(e) {
+              var text = $(this).val();
+              for (var x=0;x<banned.length;x++) {
+                  if (text.search(banned[x]) !== -1) {
+
+                  }
+                  var regExp = new RegExp(banned[x]);
+                  text = text.replace(regExp,'');
+              }
+              $(this).val(text);
+              },false);
+          }
+        </script>
+</html>
+*@

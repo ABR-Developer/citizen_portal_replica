@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BRY3zYdwPUARcCnvikLH5pjhkCDcv+SP4z2ThYXlORU=",
+  "Hash": "tQ/9X0ebsnaQU9ophbNCoujbbxgEPbaTwS2HsSehxgE=",
   "Source": "Citizen_Portal",
   "BasePath": "_content/Citizen_Portal",
   "Mode": "Default",
@@ -950,6 +950,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\lib\\circular logo.png",
+      "SourceId": "Citizen_Portal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\",
+      "BasePath": "_content/Citizen_Portal",
+      "RelativePath": "lib/circular logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\circular logo.png"
     },
     {
       "Identity": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\lib\\citizen portal icon.png",

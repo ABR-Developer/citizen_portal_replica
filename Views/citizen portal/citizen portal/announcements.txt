@@ -1,0 +1,236 @@
+<!--
+=========================================================
+* Material Dashboard 2 - v3.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="csrf-token" content="DwJQH2mRp8a7GmSrosu9oER27hMiUej6x2rVWL2N">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://web.citizenportal.gov.pk/md-dashboard/assets/img/apple-icon.png <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/img/apple-icon.png>">
+  <link rel="icon" type="image/png" href="https://web.citizenportal.gov.pk/images/portal.png <view-source:https://web.citizenportal.gov.pk/images/portal.png>">
+  <title>
+    Pakistan Citizen's Portal
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700 <view-source:https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700>" />
+  <!-- Nucleo Icons -->
+  <link href="https://web.citizenportal.gov.pk/md-dashboard/assets/css/nucleo-icons.css <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/css/nucleo-icons.css>" rel="stylesheet" />
+  <link href="https://web.citizenportal.gov.pk/md-dashboard/assets/css/nucleo-svg.css&quot; rel=&quot;stylesheet <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/css/nucleo-svg.css%22%20rel=%22stylesheet>" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js <view-source:https://kit.fontawesome.com/42d5adcbca.js>" crossorigin="anonymous"></script>
+
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round <view-source:https://fonts.googleapis.com/icon?family=Material+Icons+Round>" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com <view-source:https://fonts.googleapis.com/>">
+<link rel="preconnect" href="https://fonts.gstatic.com <view-source:https://fonts.gstatic.com/>" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap <view-source:https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap>" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-avatar@latest/dist/avatar.min.css <view-source:https://cdn.jsdelivr.net/npm/bootstrap-avatar@latest/dist/avatar.min.css>" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="https://web.citizenportal.gov.pk/md-dashboard/assets/css/material-dashboard.css?v=3.0.0 <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/css/material-dashboard.css?v=3.0.0>" rel="stylesheet" />
+  <link rel="stylesheet" href="https://web.citizenportal.gov.pk/plugins/iziToast/dist/css/iziToast.min.css <view-source:https://web.citizenportal.gov.pk/plugins/iziToast/dist/css/iziToast.min.css>">
+
+    
+</head>
+
+<body class="g-sidenav-show  bg-gray-200">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-success" id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0 d-flex justify-content-center" href="/ <view-source:https://web.citizenportal.gov.pk/>" >
+        <img src="https://web.citizenportal.gov.pk/images/v1-pmdu.png <view-source:https://web.citizenportal.gov.pk/images/v1-pmdu.png>"  alt="main_logo">
+        
+      </a>
+      
+    </div>
+    <hr class="horizontal light mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="https://web.citizenportal.gov.pk/dashboard <view-source:https://web.citizenportal.gov.pk/dashboard>">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">dashboard</i>
+            </div>
+            <span class="nav-link-text ms-1">Applications Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="https://web.citizenportal.gov.pk/profile <view-source:https://web.citizenportal.gov.pk/profile>">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">manage_accounts</i>
+            </div>
+            <span class="nav-link-text ms-1">Profile</span>
+          </a>
+        </li>
+        <li class="nav-item  ">
+          <a  class="nav-link text-white " href="javascript:;">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">done_all</i>
+            </div>
+            <span class="nav-link-text ms-1">Verification</span>
+          </a>
+        </li>
+                            <li class="nav-item">
+              <a class="nav-link text-white " href="https://web.citizenportal.gov.pk/suggestions <view-source:https://web.citizenportal.gov.pk/suggestions>">
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                  <i class="material-icons opacity-10">note_add</i>
+                </div>
+                <span class="nav-link-text ms-1">Suggestions</span>
+              </a>
+            </li>
+                <li class="nav-item">
+          <a id="tutorials_link" class="nav-link text-white" href="# <view-source:https://web.citizenportal.gov.pk/announcements#>" data-toggle="modal" data-target="#tutorials_modal">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">article</i>
+            </div>
+            <span class="nav-link-text ms-1">Tutorials</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="https://web.citizenportal.gov.pk/team-credits <view-source:https://web.citizenportal.gov.pk/team-credits>">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">groups</i>
+            </div>
+            <span class="nav-link-text ms-1">Team Credits</span>
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-white " href="https://web.citizenportal.gov.pk/contact-us <view-source:https://web.citizenportal.gov.pk/contact-us>">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">contact_support</i>
+            </div>
+            <span class="nav-link-text ms-1">Contact Us</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="https://cdn.pmdu.gov.pk/guideline/manual/PCP-user-manual-urdu.pdf <view-source:https://cdn.pmdu.gov.pk/guideline/manual/PCP-user-manual-urdu.pdf>">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">description</i>
+            </div>
+            <span class="nav-link-text ms-1">User Manual</span>
+            
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="https://pmo.gov.pk/pcp-privacypolicy.php <view-source:https://pmo.gov.pk/pcp-privacypolicy.php>">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">policy</i>
+            </div>
+            <span class="nav-link-text ms-1">Privacy Policy</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+  </aside>  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg bg-gradient-success  mt-4 top-1 px-0 mx-4  border-radius-xl" id="navbarBlur" data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          
+          
+          <img class="d-inline-flex align-items-center avatar avatar-128 bg-light rounded-circle text-white p-0" src="https://web.citizenportal.gov.pk/images/portal.png <view-source:https://web.citizenportal.gov.pk/images/portal.png>">
+          <h5 class="d-inline-flex align-items-center text-white mb-0 p-3" style="font-family:'Nunito', sans-serif; font-weight:600;">Pakistan Citizen's Portal</h5>
+        </nav>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <ul class="navbar-nav  justify-content-end">
+              <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                  <div class="sidenav-toggler-inner">
+                    <i class="sidenav-toggler-line"></i>
+                    <i class="sidenav-toggler-line"></i>
+                    <i class="sidenav-toggler-line"></i>
+                  </div>
+                </a>
+              </li>
+              
+            <li class="nav-item dropdown pe-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Announcements">
+              <a href="https://web.citizenportal.gov.pk/announcements <view-source:https://web.citizenportal.gov.pk/announcements>" class="nav-link text-body p-0 position-relative" >
+                <i class="material-icons text-white cursor-pointer">
+              campaign
+            </i>
+                
+              </a>
+              
+            </li>
+            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Logout">
+                <a href="https://web.citizenportal.gov.pk/UserLogout <view-source:https://web.citizenportal.gov.pk/UserLogout>" class="nav-link text-body p-0 position-relative">
+                  <i class="material-icons text-white me-sm-1">
+                logout
+              </i>
+                </a>
+              </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->    
+    <div class="container-fluid py-4">
+      
+      <div id="app">
+        <announcement-component :announcements='{&quot;current_page&quot;:1,&quot;data&quot;:[{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa32&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:231,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa33&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:232,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa34&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:233,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa35&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:234,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa36&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:235,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa37&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:236,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa38&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:237,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa39&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:238,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa3a&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:239,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa3b&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:240,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa3c&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:241,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa3d&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:242,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa3e&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:243,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa3f&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:244,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]},{&quot;_id&quot;:&quot;62f803299b0baa7b4526fa40&quot;,&quot;announcement_id&quot;:318,&quot;user_id&quot;:2110,&quot;user_title&quot;:&quot;Prime Minister of Pakistan&quot;,&quot;category_id&quot;:3,&quot;category_title&quot;:&quot;Government Notification&quot;,&quot;title_english&quot;:&quot;Happy Independence Day \ud83c\uddf5\ud83c\uddf0&quot;,&quot;message_english&quot;:&quot;We wish you a very Happy Independence \ud83c\uddf5\ud83c\uddf0 Day.\r\n\ud83c\uddf5\ud83c\uddf0 Pakistan Zindabad.&quot;,&quot;title_urdu&quot;:null,&quot;message_urdu&quot;:null,&quot;recipient&quot;:&quot;inland&quot;,&quot;country_id&quot;:null,&quot;province_id&quot;:2,&quot;district_id&quot;:245,&quot;citizen_id&quot;:null,&quot;is_archived&quot;:0,&quot;start_date&quot;:&quot;2022-08-14&quot;,&quot;end_date&quot;:&quot;2022-08-14&quot;,&quot;created_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;updated_at&quot;:&quot;2022-08-14 01:01:45&quot;,&quot;is_announcement_read&quot;:null,&quot;attachments&quot;:[]}],&quot;first_page_url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=1&quot;,&quot;from&quot;:1,&quot;last_page&quot;:12,&quot;last_page_url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=12&quot;,&quot;links&quot;:[{&quot;url&quot;:null,&quot;label&quot;:&quot;&amp;laquo; Previous&quot;,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=1&quot;,&quot;label&quot;:1,&quot;active&quot;:true},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=2&quot;,&quot;label&quot;:2,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=3&quot;,&quot;label&quot;:3,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=4&quot;,&quot;label&quot;:4,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=5&quot;,&quot;label&quot;:5,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=6&quot;,&quot;label&quot;:6,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=7&quot;,&quot;label&quot;:7,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=8&quot;,&quot;label&quot;:8,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=9&quot;,&quot;label&quot;:9,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=10&quot;,&quot;label&quot;:10,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=11&quot;,&quot;label&quot;:11,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=12&quot;,&quot;label&quot;:12,&quot;active&quot;:false},{&quot;url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=2&quot;,&quot;label&quot;:&quot;Next &amp;raquo;&quot;,&quot;active&quot;:false}],&quot;next_page_url&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list?page=2&quot;,&quot;path&quot;:&quot;http:\/\/api.pmdu.gov.pk\/api\/announcements\/inbox\/list&quot;,&quot;per_page&quot;:15,&quot;prev_page_url&quot;:null,&quot;to&quot;:15,&quot;total&quot;:177}'> </announcement-component>
+        
+        
+      </div>
+
+
+      
+      
+    </div>
+  </main>
+  
+  <!--   Core JS Files   -->
+  <script src="https://web.citizenportal.gov.pk/js/app.js <view-source:https://web.citizenportal.gov.pk/js/app.js>"></script>
+  <script src="https://web.citizenportal.gov.pk/md-dashboard/assets/js/core/popper.min.js <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/js/core/popper.min.js>"></script>
+  <script src="https://web.citizenportal.gov.pk/md-dashboard/assets/js/core/bootstrap.min.js <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/js/core/bootstrap.min.js>"></script>
+  <script src="https://web.citizenportal.gov.pk/md-dashboard/assets/js/plugins/perfect-scrollbar.min.js <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/js/plugins/perfect-scrollbar.min.js>"></script>
+  <script src="https://web.citizenportal.gov.pk/md-dashboard/assets/js/plugins/smooth-scrollbar.min.js <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/js/plugins/smooth-scrollbar.min.js>"></script>
+  <script src="https://web.citizenportal.gov.pk/md-dashboard/assets/js/plugins/chartjs.min.js <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/js/plugins/chartjs.min.js>"></script>
+  <script src="https://web.citizenportal.gov.pk/notify/bootstrap-notify.js <view-source:https://web.citizenportal.gov.pk/notify/bootstrap-notify.js>"></script>
+  <script src="https://web.citizenportal.gov.pk/notify/bootstrap-notify.min.js <view-source:https://web.citizenportal.gov.pk/notify/bootstrap-notify.min.js>"></script>
+
+  
+  <script>
+      </script>
+  
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+        
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js <view-source:https://buttons.github.io/buttons.js>"></script>
+  
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="https://web.citizenportal.gov.pk/md-dashboard/assets/js/material-dashboard.min.js?v=3.0.0 <view-source:https://web.citizenportal.gov.pk/md-dashboard/assets/js/material-dashboard.min.js?v=3.0.0>"></script>
+  <script src="https://web.citizenportal.gov.pk/plugins/iziToast/dist/js/iziToast.min.js <view-source:https://web.citizenportal.gov.pk/plugins/iziToast/dist/js/iziToast.min.js>"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js <view-source:https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js>"></script>
+
+
+    
+
+  
+</body>
+
+</html>
