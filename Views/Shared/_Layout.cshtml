@@ -26,20 +26,21 @@
             @*collapse navbar-collapse navbar-right*@
             <div>
                 <ul class="navbar-nav d-flex flex-row align-items-center font-md">
-                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Welcome</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Tutorials</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Press Release</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Success Stories</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Client">Prime Ministers Office</a></li>
-                    <li><a class="btn btn-sm btn-warning" asp-controller="Complainent" asp-action="complaint">Lodge A Complaint</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="index">Welcome</a></li>
+                    @*<li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a></li>*@
+                    @*<li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="tutorial">About Us</a></li>*@
+                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="press_release">Press Release</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="success_stories">Success Stories</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="https://pmo.gov.pk/">Prime Ministers Office</a></li>
+                    @*<li><a class="btn btn-sm btn-warning" asp-controller="Complainant" asp-action="login">Lodge a complaint</a></li>*@
+                    <li><a class="btn btn-sm btn-warning" asp-controller="Complainant" asp-action="login">Sign Up</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     @RenderBody()
-    
+
     <footer class="fixed-bottom">
         @*@RenderSection("footer" , false)*@
         <div class="text-white fadeIn">

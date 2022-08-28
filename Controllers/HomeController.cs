@@ -1,12 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Citizen_Portal.Models;
+using Citizen_Portal.Models.Repositories;
+
 namespace Citizen_Portal.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult Index()
+        public ViewResult index()
         {
             return View("index");
+        }
+
+        public ViewResult About()
+        {
+            return View("About");
         }
 
         public ViewResult AboutUs()
@@ -14,39 +20,34 @@ namespace Citizen_Portal.Controllers
             return View("AboutUs");
         }
 
-        public ViewResult Login()
+        public ViewResult contact_us()
         {
-            return View("Login");
-        }
-        public PartialViewResult LoginPartial()
-        {
-            return PartialView("LoginPartial");
+            return View("contact_us");
         }
 
-        public PartialViewResult RegisterPartial()
+
+        public ViewResult home()
         {
-            return PartialView("RegisterPartial");
+            return View("home");
         }
 
-        [HttpGet]
-        public ViewResult SignUp()
+        public ViewResult press_release()
         {
-            return View("SignUp");
+            return View("press_release");
+        }
+        public ViewResult prime_ministers_office()
+        {
+            return View("prime_ministers_office");
+        }
+        public ViewResult success_stories()
+        {
+            return View("success_stories");
         }
 
-        [HttpGet]
-        public ViewResult Register()
+        public ViewResult tutorial()
         {
-            return View("Register");
+            return View("tutorial");
         }
-
-        [HttpPost]
-        public ViewResult Register(User user)
-        {
-            string result = UserRepository.Add_User(user);
-            return View("Index",result);
-        }
-
         public ViewResult Client()
         {
             List<User> userList = UserRepository.GetAllUsers();

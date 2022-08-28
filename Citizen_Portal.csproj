@@ -1,10 +1,37 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\citizen portal\**" />
+    <Content Remove="Views\citizen portal\**" />
+    <EmbeddedResource Remove="Views\citizen portal\**" />
+    <None Remove="Views\citizen portal\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\About.cshtml" />
+    <Content Remove="Views\announcements.cshtml" />
+    <Content Remove="Views\complaints.cshtml" />
+    <Content Remove="Views\contact-us.cshtml" />
+    <Content Remove="Views\dashboared.cshtml" />
+    <Content Remove="Views\foreigner_register.cshtml" />
+    <Content Remove="Views\home.cshtml" />
+    <Content Remove="Views\inland_register.cshtml" />
+    <Content Remove="Views\login complaint.cshtml" />
+    <Content Remove="Views\overseas_register.cshtml" />
+    <Content Remove="Views\press release.cshtml" />
+    <Content Remove="Views\prime- minister office.cshtml" />
+    <Content Remove="Views\register.cshtml" />
+    <Content Remove="Views\success stories.cshtml" />
+    <Content Remove="Views\suggestions.cshtml" />
+    <Content Remove="Views\team-credits.cshtml" />
+    <Content Remove="Views\Tutorial.cshtml" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="4.1.0" />
