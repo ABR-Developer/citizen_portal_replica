@@ -1,14 +1,29 @@
 ﻿using Citizen_Portal.Models;
 using Microsoft.AspNetCore.Mvc;
+using Citizen_Portal.Models.Interfaces;
+using AutoMapper;
+using Citizen_Portal.Models.ViewModels;
 
 namespace Citizen_Portal.Controllers
 {
     public class ComplainantController : Controller
     {
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
+
+        public IComplainantRepository _complainantRepo;
+        private readonly IMapper _mapper;
+        public ComplainantController(IComplainantRepository complainantRepo, IMapper mapper)
+        {
+            _complainantRepo = complainantRepo;
+            _mapper = mapper;
+        }
+
+        public IActionResult index()
+        {
+            Complainant complainant = _complainantRepo.GetById(0);
+            ComplainantViewModel userViewModel = _mapper.Map<ComplainantViewModel>(complainant);
+            return View(userViewModel);
+        }
+
         public ViewResult complaints(String user_type)
         {
             //if(user_type == "1")
@@ -39,7 +54,7 @@ namespace Citizen_Portal.Controllers
             }
             else if (user_type == "4")
             {
-                ViewData["Partial_View_Name"] = "home";
+                ViewData["Partial_View_Name"] = "memberRegisterPartial";
             }
             return View("login");
         }
@@ -66,16 +81,6 @@ namespace Citizen_Portal.Controllers
         {
             return View("login");
         }
-        //public PartialViewResult LoginPartial()
-        //{
-        //    return PartialView("LoginPartial");
-        //}
-
-        //public PartialViewResult registerPartial()
-        //{
-        //    ViewData["citizen_type"] = "inland";
-        //    return PartialView("registerPartial");
-        //}
 
         [HttpGet]
         public ViewResult SignUp()
@@ -88,37 +93,13 @@ namespace Citizen_Portal.Controllers
         {
             return View("register");
         }
-        
 
-        
-        //[HttpPost]
-        //public PartialViewResult registerAs(string citizen_type)
-        //{
-        //    ViewData["citizen_type"] = "inland";
-        //    //String data = null;
-
-        //    //if (citizen_type == "1")
-        //    //{
-        //    //    data = "inland";
-        //    //}
-        //    //else if(citizen_type == "2")
-        //    //{
-        //    //    data = "overseas";
-        //    //}
-        //    //else if(citizen_type == "3")
-        //    //{
-        //    //    data = "foreigner";
-        //    //}
-        //    return PartialView("registerPartial");
-        //}
-        
-        
-        //[HttpPost]
-        //public ViewResult Register(User user)
-        //{
-        //    string result = UserRepository.Add_User(user);
-        //    return View("Index", result);
-        //}
+        [HttpPost]
+        public ViewResult register(Complainant complainant)
+        {
+            _complainantRepo.Add(complainant);
+            return View("complaints");
+        }
 
         public ViewResult announcements()
         {

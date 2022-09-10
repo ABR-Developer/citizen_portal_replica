@@ -1,4 +1,4 @@
-﻿@{
+﻿@*@{
     ViewData["Title"] = "Login";
 }
 @model Citizen_Portal.Models.User
@@ -38,19 +38,19 @@
         </div>
     </div>
 </div>
-@*@section s{
+@section s{
     function allnumericplusminus(inputtxt) {
     var numbers = /^[-+]?[0-9]+$/;
     if(inputtxt.value.match(numbers))
         {
-            alert('Correct...Try another');
+            alert('correct...try another');
             document .form1.text1.focus();
             return true;
         }
     else {
-        alert('Please input correct format');
+        alert('please input correct format');
         document .form1.text1.focus();
         return false;
         }
-    }*@
-}
+    }
+}*@

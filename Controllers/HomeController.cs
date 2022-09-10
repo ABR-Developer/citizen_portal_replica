@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Citizen_Portal.Models.Repositories;
+using Citizen_Portal.Models;
 
 namespace Citizen_Portal.Controllers
 {
@@ -50,7 +51,8 @@ namespace Citizen_Portal.Controllers
         }
         public ViewResult Client()
         {
-            List<User> userList = UserRepository.GetAllUsers();
+            List<Complainant> userList = new List<Complainant>();
+            //List<Complainant> userList = ComplainantRepository.GetAlComplainants();
             return View("Client", userList);
         }
     }

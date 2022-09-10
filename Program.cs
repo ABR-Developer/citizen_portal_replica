@@ -1,8 +1,12 @@
+using Citizen_Portal.Models.Interfaces;
+using Citizen_Portal.Models.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddSingleton<IComplainantRepository , ComplainantRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

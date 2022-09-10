@@ -27,9 +27,11 @@
 <body>*@
 <div>
     <div class="d-flex flex-wrap">
-		<div class="col-md-4 p-3">
-			<div>
-				<a href="https://web.citizenportal.gov.pk" class="row"><img class=""src="https://web.citizenportal.gov.pk/images/l3.png" alt="IMG"></a>
+		<div class="col-md-4 p-5 top-0 left-0">
+			<div class="d-flex flex-row justify-content-center">
+				<a href="https://web.citizenportal.gov.pk">
+                    <img class="circular-shadow radius-50" height="150px" src="~/lib/circular logo.png" alt="main logo"/>
+                </a>
 			</div>
 			<div class="p-4">
 				<p class="text-secondary fs-5">Welcome, Dear Citizen / Member!</p>
@@ -98,6 +100,9 @@
                     }
                     @if (ViewData["Partial_View_Name"] == "foreignerRegisterPartial") {
                         <partial name="foreignerRegisterPartial"/>
+                    }
+                    @if (ViewData["Partial_View_Name"] == "memberRegisterPartial") {
+                        <partial name="memberRegisterPartial"/>
                     }
                 </div>
             </div>

@@ -1,4 +1,4 @@
-﻿@{
+﻿@*@{
     ViewData["Title"] = "Register";
 }
 @model Citizen_Portal.Models.User
@@ -28,12 +28,12 @@
             <form asp-controller="Complaints" asp-action="register">
             <div class="">
                 <div class="p-10p d-flex flex-wrap align-items-center justify-content-between">
-                                    @*<div class="col-md-4 d-flex px-md-1 align-items-center my-3">
+                                    <div class="col-md-4 d-flex px-md-1 align-items-center my-3">
                                         <label class="col-md-4 col-sm-5" asp-for="Area_Code">Area Code<span class="text-danger px-1">*</span></label>
                                         <input type="hidden" id="area_country_code_id" name="area_country_code_id" value="1">
                                         <select class="col-md-8 col-sm-7 p-6p border-0 radius-4p" asp-for="Area_Code">
                                             <option value="92" data-country-id="1"> Pakistan  (92) </option>
-                                        </select>*@
+                                        </select>
                     <div class="col-md-6 d-flex px-md-1 align-items-center my-3">
                         <label class="col-md-5 col-sm-5" asp-for="MobileNumber">Mobile Number<span class="text-danger px-1">*</span></label>
                         <input class="col-md-7 col-sm-7 p-6p border-0 radius-4p" asp-for="MobileNumber" type="tel" placeholder="03341234567"/>
@@ -166,7 +166,8 @@
                     <div class="p-20p"></div>
                 </div>
             </div>
-@*                                                <input type="hidden" name="_token" value="fapLIgcU49QBeh8BKDHo8UjFvfJjuLeaG4aRyTem">*@
+                                                <input type="hidden" name="_token" value="fapLIgcU49QBeh8BKDHo8UjFvfJjuLeaG4aRyTem">
         </form>
     </div>
 </div>
+*@

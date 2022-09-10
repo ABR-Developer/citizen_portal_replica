@@ -21,6 +21,8 @@
     <Content Remove="Views\dashboared.cshtml" />
     <Content Remove="Views\foreigner_register.cshtml" />
     <Content Remove="Views\home.cshtml" />
+    <Content Remove="Views\Home\cleanlinessMardan.cshtml" />
+    <Content Remove="Views\Home\mardan.cshtml" />
     <Content Remove="Views\inland_register.cshtml" />
     <Content Remove="Views\login complaint.cshtml" />
     <Content Remove="Views\overseas_register.cshtml" />
@@ -34,11 +36,28 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="4.1.0" />
+    <Content Include="Components\SearchOptionsViewComponent.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\Admin\" />
     <Folder Include="wwwroot\lib\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Home\cleanlinessMardan.cshtml" />
+    <None Include="Views\Home\mardan.cshtml" />
   </ItemGroup>
 
 </Project>

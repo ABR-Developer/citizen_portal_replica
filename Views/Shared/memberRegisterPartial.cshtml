@@ -1,0 +1,102 @@
+﻿@model Citizen_Portal.Models.Complainee
+<div>
+    <form asp-controller="Complainee" asp-action="register" method="post">
+        <div class="row">
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="nationality">Nationality <span style="color:red">*</span></label>
+                <select asp-for="nationality" class="form-control" required>
+                    <option value="1">Pakistan</option>
+                </select>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="name">Full Name <span style="color:red">*</span></label>
+                <input asp-for="name" class="form-control" required>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="office_landline_number"> Landline Number <span style="color:red">*</span></label>
+                <input asp-for="office_landline_number" class="form-control" required>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="cnic">CNIC <span style="color:red; margin-top:24px;">*</span></label>
+                <input asp-for="cnic" class="form-control" required>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="office_address">Office Address <span style="color:red">*</span></label>
+                <input asp-for="office_address" class="form-control" required>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="gender">Gender <span style="color:red">*</span></label>
+                <select asp-for="gender" class="form-control" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="col-md-6" id="email_div" style="margin-top:24px;">
+                <label asp-for="email">Email <span style="color:red">*</span></label>
+                <input asp-for="email" class="form-control" required>
+            </div>
+            <div class="col-md-6" id="password_div" style="margin-top:24px;">
+                <label asp-for="password">Password <span style="color:red">*</span></label>
+                <input asp-for="password" type="password" class="form-control" required>
+            </div>
+            <div class="col-md-6" id="confirm_password_div" style="margin-top:24px;">
+                <label asp-for="confirm_password">Confirm Password <span style="color:red">*</span></label>
+                <input asp-for="confirm_password" type="password" class="form-control" required>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="province">Province <span style="color:red">*</span></label>
+                <select asp-for="province" class="form-control" required>
+                    <option value="1">Khyber Pakhtunkhwa | KP</option>
+                    <option value="2">Punjab | PU</option>
+                    <option value="3">Sindh | SD</option>
+                    <option value="4">Balochistan | BL</option>
+                    <option value="6">Federal Govt | IS</option>
+                    <option value="7">Gilgit-Baltistan | GB</option>
+                    <option value="8">Azad Jammu and Kashmir | AK</option>
+                </select>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="working_field">Field <span style="color:red">*</span></label>
+                <select asp-for="working_field" class="form-control" required>
+                    <option value="1">Health</option>
+                    <option value="2">Education</option>
+                    <option value="3">Land Revenue</option>
+                    <option value="4">Agriculture</option>
+                    <option value="6">Disaster / Energy</option>
+                    <option value="7">Law and Order</option>
+                    <option value="8">Transport</option>
+                    <option value="8">Media</option>
+                    <option value="8">Nadra</option>
+                    <option value="8">FBR</option>
+                    <option value="8">Immigration and Passport</option>
+                    <option value="8">FIA / Cyber Crime</option>
+                    <option value="8">Banking</option>
+                    <option value="8">Railway</option>
+                    <option value="8">Pakistan Post</option>
+                    <option value="8">Banking</option>
+                    <option value="8">Pakistan Telecommunication Authority (PTA)</option>
+                    <option value="8">Pakistan Post</option>
+                    <option value="8">Pakistan Post</option>
+                </select>
+            </div>
+            <div class="col-md-9">
+                <br>
+                <div class="contact100-form-checkbox">
+                    <input asp-for="term_accepted" class="input-checkbox100">
+                    <label for="ckb1" style="color:black; display: inline-block;"><u>I Agree to the Terms and Conditions</u></label>
+                    <label onclick="showTermsModal()" style="color:rgb(6, 113, 214); display: inline-block;"><u>Read</u></label>
+                </div>
+                <div class="text-danger font-italic">
+                    Note: You must agree to the terms and conditions in order to continue
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <button class="btn btn-success" type="submit" onclick="">Register</button>
+            </div>
+            <div class="text-center col-md-12">
+                <br>Already have an account? <a style="color:black" class="txt1" href="https://web.citizenportal.gov.pk/login <view-source:https://web.citizenportal.gov.pk/login>" onclick="showloader()"><b>Login here</b></a>
+            </div>
+        </div>
+    </form>
+</div>

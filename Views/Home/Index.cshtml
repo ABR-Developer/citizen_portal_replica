@@ -84,7 +84,22 @@
 
     </div>*@
     @*counter section*@
-    <section >
+    <div>
+        @*@await Component.InvokeAsync("SearchOptions")*@
+        @await Component.InvokeAsync("FormBasics" , new{
+            componentName = "input",
+            cLassName = "form-control",
+            ForAttribute = "mobile_number",
+            //IsRequired = false
+        })
+@*        <vc:FormBasics
+            ComponentName = "input",
+            CLassName = "form-control",
+            ForAttribute = "mobile_number",
+            Required = true
+        ></vc:FormBasics>*@
+    </div>
+    <section>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -121,7 +136,7 @@
             </div>
         </div>
         <div class="space-60"></div>
-    </section>
+    </section0>
     @*counter section end*@
     @*how to install section   *@
     <section class="p-5 bg-success">

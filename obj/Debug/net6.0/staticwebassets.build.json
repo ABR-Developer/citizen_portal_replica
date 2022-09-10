@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aHJqyat9F/FnMCJmt7RnT0fOhoRRvJISx6cnen2MQwY=",
+  "Hash": "nPBkHkAtp5EDVd7LZB5U7EtLDbruTfH8xKIM1jqMXYU=",
   "Source": "Citizen_Portal",
   "BasePath": "_content/Citizen_Portal",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Citizen_Portal.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\css\\AdminDashbored.css",
+      "SourceId": "Citizen_Portal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\",
+      "BasePath": "_content/Citizen_Portal",
+      "RelativePath": "css/AdminDashbored.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AdminDashbored.css"
     },
     {
       "Identity": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\css\\site.css",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\backgrounds\\homeBackground1.png"
+    },
+    {
+      "Identity": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\images\\complaint.jpg",
+      "SourceId": "Citizen_Portal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\",
+      "BasePath": "_content/Citizen_Portal",
+      "RelativePath": "images/complaint.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\complaint.jpg"
     },
     {
       "Identity": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\images\\install app.jpg",
@@ -1018,6 +1052,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\lib\\circular admin logo.png",
+      "SourceId": "Citizen_Portal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\",
+      "BasePath": "_content/Citizen_Portal",
+      "RelativePath": "lib/circular admin logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\circular admin logo.png"
     },
     {
       "Identity": "C:\\Users\\abr35\\source\\repos\\Citizen_Portal\\wwwroot\\lib\\circular logo.png",
