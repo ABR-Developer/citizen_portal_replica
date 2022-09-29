@@ -1,0 +1,43 @@
+﻿<nav class="px-3 navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand" href="#">
+        <span><img style="height:60px; width:60px" src="/images/circular logo.png" alt="Icon Here"></span>
+        <span class="text-light font-md">Citizen Portal</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link  text-light" asp-area="" asp-controller="Home" asp-action="index">Welcome</a></li>
+            <li class="nav-item"><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="press_release">Press Release</a></li>
+            <li class="nav-item"><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="success_stories">Success Stories</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="https://pmo.gov.pk/">Prime Ministers Office</a></li>
+            <li>
+            <li class="h2 mx-2 d-none d-md-block disabled text-light">|</li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Register As
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-success" asp-controller="Complainant" asp-action="InlandRegister">In-Land Pakistani</a>
+                    <a class="dropdown-item text-success" asp-controller="Complainant" asp-action="OverseasRegister">Over-seas Pakistani</a>
+                    <a class="dropdown-item text-success" asp-controller="Complainant" asp-action="ForeignerRegister">Foreigner</a>
+                    <div class="dropdown-divider border-success"></div>
+                    <a class="dropdown-item text-success" asp-controller="Complainee" asp-action="register">Member</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login As
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-success" asp-controller="Complainant" asp-action="login">Citizen</a>
+                    <div class="dropdown-divider border-success"></div>
+                    <a class="dropdown-item text-success" asp-controller="Complainee" asp-action="login"> Member</a>
+                    <div class="dropdown-divider border-success"></div>
+                    <a class="dropdown-item text-success" asp-controller="Admin" asp-action="login"> Admin</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

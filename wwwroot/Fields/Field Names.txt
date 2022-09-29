@@ -1,0 +1,63 @@
+Airports
+Auditor General of Pakistan (AGP),General Complaint,Complaint against Audit Activity,Complaint against Auditing Office,Complaint against Auditor
+Banking,First Women Bank Ltd,SME Bank,National Bank of Pakistan (NBP),Overseas / NRPs,Bancassurance and 3rd Party Investment Schemes,Home Remittances,Remittances through SWIFT,Remittance / Clearing (Inland),Utility Bill,Over The Counter Issues,Account Maintenance,Clearing,Pension Accounts,Agent Banking,Call Center / Phone Banking Issues,Branch Issues,Mobile Banking / SMS Banking / Mobile App,E - Banking,ATM / Debit Cards,LC / BG / TC,Personal Loan,House Loan,Agricultural Loans,Auto Loan,Credit Cards,Zarai Taraqiati Bank Limited (ZTBL)
+BISP
+Board of Investment (BOI)
+Cantonment Boards Services,Sanjwal Cantonment Board,Faisal Cantonment Board,Walton Cantonment Board,Zhob Cantonment Board,Wah Cantonment Board,Swat Cantonment Board,Sialkot Cantonment Board,Shorkot Cantonment Board,Sargodha Cantonment Board,Risalpur Cantonment Board,Rawalpindi Cantonment Board,Quetta Cantonment Board,Peshawar Cantonment Board,Pano Aqil Cantonment Board,Ormara Cantonment Board,Okara Cantonment Board,Nowshera Cantonment Board,Murree Hills Cantonment Board,Multan Cantonment Board,Mardan Cantonment Board,Manora Cantonment Board,Mangla Cantonment Board,Malir Cantonment Board,Loralai Cantonment Board
+Capital Development Authority (CDA),Land Matters,Market & Road Maintenance,Building Control,Property Matters,Encroachment,Street Lights,Sewerage,Cleanliness
+Controller General of Accounts (CGA),DG MIS / FABS,DBA Pak PWD,CAO GSP,DAPPOD,DG Accounts Works Lahore,CAO Pak Mint,CAO MOFA,Accountant General Pakistan Revenue (AGPR),Accountant General, AJK,Accountant General, Khyber Pakhtunkhwa,Accountant General, Punjab,Accountant General, Balochistan,Accountant General, Sindh,Accountant General, Gilgit & Baltistan
+Corruption or Malpractice,Inefficiency,Harassment,Fraud / Forgery,Power Abuse,Violation of Merit / Rules,Financial Corruption,Complaint against Revenue Staff
+Development Projects,NGO Infra-Projects,Foreign Funded Projects,Federal Govt. Projects,Provincial Govt. Projects,District Govt. Projects,TMA Projects,VC / NC Project
+Disaster  or Emergency
+Education,Special Education,Higher Education Commission,Universities,Colleges,Elementary & Secondary,Private Schools
+Ehsaas Program
+Electronic Media or PEMRA
+Energy & Power,Pakistan State Oil (PSO),OGRA,OGDCL,Gas,Electricity
+Environment & Forest,Industrial Pollution,Forest Cutting,10 Billion Tree Tsunami,Billion Tree Tsunami,Hospital Waste,Industrial Waste
+Excise & Taxation,Islamabad Excise,Financial Fraud,Money Laundering,Provincial Excise
+Farmer  or Agriculture,Agriculture,Agriculture Loan,Crop Insurance,Fertilizers,Kissan Card,Pesticides,Prices of Crops / Produce,Seeds,Soil Conservation,Miscellaneous (Farmers),Water Management
+FBR,Customs,Federal Excise,Sales Tax,Income Tax
+FIA or Cyber Crime,Human Resource Management (HRM),Human Trafficking & Smuggling,Interpol,Intellectual Property Rights,Banking Crimes,Counter Terrorist,Anti-Corruption,Corporate Crime,Electricity, Gas, Oil Anti-Theft Unit,Immigration,Cyber Crime
+Fisheries & Livestock,Fisheries,Livestock & Dairy
+Health,Medical Teaching,Secondary Health,Primary Health,Spurious / Unregistered Medicines,Illegal Practice / Quacks
+Higher Education Commission
+Human Rights,Violation of the Rights of Senior Citizens,Violation of the Rights of Persons with Disabilities,Violation of the Rights of HR Defenders,Torture,Kidnapping,Killing,Violence Against Minorities,Corporal Punishment,Rape,Harassment at Public Places,Gender Based Violence,Domestic Violence,Right to Information,Right to Services,Consumer Rights,Denial of Rights,Sexual Harassment,Gender Discrimination,Child Abuse,Missing Persons
+Immigration & Passport,Diplomatic Passport,Renunciation of Pakistani Citizenship,Extension of Foreigner Visa,Blacklisting of Passport,Renewal of Passport,Pakistani Visa,Pakistani Citizenship,Official Passport,Issuance of New Passport
+Investments,National Savings (CDNS),Board of Investment (BOI),Banks related issues
+Islamabad Excise,
+Land Grabbing  or Encroachment,Private Land,Govt. Land
+Land Revenue,
+Law & Order,Prisons,Pakistan Railway Police,Airport Security Force,Traffic Police,Motorway Police,Anti-Narcotics Force (ANF),Police
+Licenses, Certificates & Registrations,Pakistan Medical Commission (PMC),Pakistan Engineering Council (PEC),Vehicle Registration,Union Registration,NGO Registration,NGO NOC,NOC for Foreign Traveler,Marriage Certificate,Death Certificate,Birth Certificate,Domicile Certificate,Divorce Registration,Vehicle Fitness Certificate,Route Permit,Medical Store License,Fishing License,Arm License,Driving License
+Media,Social Media,Electronic Media / PEMRA,Print Media
+Motorways,
+Municipal Services,Low hanging electricity wires,Illegal billboards,Construction material on roads,Stray Animals,Illegal Construction,Parking / Adda,Unhygienic Food / Factory,Graveyards,Price Control,Repair of Street,Street Lights,Water Supply Scheme,Water Connection,Encroachment,Cleanliness
+NADRA,Correction,Duplicate ID Card,Updation,Modification in ID Card,Issuance of Form B (CRC),CNIC Replacement / Renewal,Family Registration Certificate (FRC),Overseas Pakistani Card,Juvenile Card (Under 18 ID Card),Issuance of New CNIC,Blocked / Impounded CNIC
+National Bank of Pakistan (NBP),
+National Savings (CDNS),
+Naya Pakistan Housing,Structural Design,Architecture Design,Town Plan / Layout Plan,Traffic Impact,Height Restriction,Environmental Protection,Water / Sewerage,Gas,Electricity,Non Encumbrance Certificate
+NHA,
+NTC,
+OGRA,
+Overseas Pakistani  Call Sarzameen,Overseas Pakistanis & Human Resource Development (OP&HRD),Community Welfare Attaché (CWA),Directorate of Workers Education (DWE),National Industrial Relation Commission (NIRC),Workers Welfare Fund (WWF),Overseas Employment Corporation (OEC),Employees Old Age Benefit (EOBI),Bureau of Emigration & Overseas Employment (BE&OE),Overseas Pakistani Foundation (OPF),Pakistan Foreign Office,Pakistan Embassy in Resident Country
+Pakistan Bait-ul-Mal,
+Pakistan Engineering Council (PEC),
+Pakistan Medical Commission (PMC),
+Pakistan Post,
+Pakistan Telecommunication Authority (PTA),
+Pakistan Telecommunication Company Limited (PTCL),
+PIA,
+Ports & Shippings,
+Poverty Alleviation and Social Safety,
+Prime Minister's Youth Program (PMYP),
+Provincial Development Authorities,Swat Development Authority (SDA),Swabi Development Authority (SDA),Sehwan Development Authority (SDA),Sargodha Development Authority (SDA),Rawalpindi Development Authority (RDA),Quetta Development Authority (QDA),Peshawar Development Authority (PDA),Muzaffarabad Development Authority (MDA),Multan Development Authority (MDA),Mirpur Development Authority (MDA),Mardan Development Authority (MDA),Mansehra Development Authority (MDA),Malir Development Authority (MDA),Lyari Development Authority (LDA),Larkana Development Authority (LDA),Lahore Development Authority (LDA),Karak Development Authority (KDA),Kaghan Development Authority (KDA),Hyderabad Development Authority (HDA),Gwadar Development Authority (GDA),Gujranwala Development Authority (GDA),Gilgit Development Authority (GDA),Galliat Development Authority (GDA),Fort Munro Development Authority (FMDA),Faisalabad Development Authority (FDA),Dera Ismail Khan Development Authority (DIKDA),D.G Khan Development Authority (DGKDA),Cholistan Development Authority (CDA),Balochistan Development Authority (BDA),Bahawalpur Development Authority (BDA),Abbottabad Development Authority (ADA)
+Railways,
+Scholarships,LLB Scholarships,phD Scholarship,Postgraduate Scholarships,Graduate Scholarship,Undergraduate Scholarship,Intermediate Scholarship,Fellowship Scholarship,Masters / MS Scholarships,Middle Scholarships,Primary Scholarships,CMMS Scholarships,DFID Scholarship,Rehmatul-lil-Alameen Scholarships,Turkey Scholarship,German Academic Exchange Service,HEC Scholarships,Ehsaas Program Scholarships
+SECP,AMC - Mutual Funds,Insurance,Capital Market,Supervision of Listed Companies,Company Registration / Compliance,e-Services / Technical Issues,SECP related issues,Company Registration
+Sehat Insaf Card,Complaints of Registered Hospitals,Public Issues / Complaints
+Special Technology Zones Authority,Ehsaas Program Scholarships,Application Process,Issuance of License
+State Life (SLICP),Health Insurance,Administrative Issues,Misselling & Defalcation of Premium,Issues Related to Policy
+Transgender,
+Transport & Communications,Ports & Shippings,NTC,Pakistan Telecommunication Company Limited (PTCL),Pakistan Telecommunication Authority (PTA),Pakistan Post,PIA,Motorways,NHA,C&W Roads,Local Govt Roads,Irrigation Roads,Railways,Bus Addas,Overloading,Fares,Airports
+Utility Stores (USC),Over Charges,Local Purchase,Black Marketing,Price Related Issue,Availability of Items
+Zarai Taraqiati Bank Limited (ZTBL),

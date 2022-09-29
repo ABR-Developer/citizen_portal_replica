@@ -1,0 +1,9 @@
+﻿@foreach (var x in @Model)
+{
+    <optgroup label="@x[0]">
+        @foreach (var i in x)
+        {
+            <option value="@i">@i</option>
+        }
+    </optgroup>
+}

@@ -2,46 +2,61 @@
     Layout = "_Layout";
 }
 @model Citizen_Portal.Models.Admin
-<!-- Section: Design Block -->
 <section class="text-center">
-  <!-- Background image -->
-    @*background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');*@
-    <div class="d-flex justify-content-center py-5" style="background: Black;">
+    <div class="d-flex justify-content-center p3-5" style="background: Black;">
         <div class="col-8 card my-5 shadow-5-strong" style="background: hsla(0, 0%, 100%, 0.8); backdrop-filter: blur(30px);">
-        <div class="card-body py-4">
-            <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
-                <div class="d-flex justify-content-evenly">
-                    <div class="d-flex justify-content-center bg-danger">
-                        <div style="width: 25px;height: 25px;position: relative;overflow: hidden;border-radius: 50%;">
-                            <img style="margin: 0 auto;height: 100%;width: auto;" src="~/lib/circular admin logo.png" alt="Admin Logo"/>
+            <div class="card-body py-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="d-flex flex-column justify-content-evenly">
+                            <div class="d-flex justify-content-center">
+                                <img style="height:100px;width:100px;border-radius:50%" src="/images/circular admin logo.png" alt="Admin Logo" />
+                            </div>
+                            <div>
+                                <h2 class="fw-bold mb-5">Login as Admin</h2>
+                            </div>
+                        </div>
+                        <form id ="myForm" method="post" asp-controller="Admin" asp-action="login">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" asp-for="name"> Enter Name  <span style="color:red">*</span></label>
+                                <input asp-for="name" id="form3Example3" class="form-control" />
+                                <span asp-validation-for="name" class="text-danger"></span>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" asp-for="password">Enter Password <span style="color:red">*</span></label>
+                                <input type="password" asp-for="password" class="form-control" />
+                                <span asp-validation-for="password" class="text-danger"></span>
+                            </div>
+                            <button type="submit" onclick="AjaxFormSubmit()" class="btn btn-primary px-5">
+                                Login
+                            </button>
+                        </form>
+                        <script>
+                            function AjaxFormSubmit() {
+                                var data = new FormDate();
+                                data.append("name", $("#name").val());
+                                data.append("password", $("#password").val());
+                                $.ajax({
+                                    type: 'POST',
+                                    url: $("#myForm").attr("action"),
+                                    data: data,
+                                    processData: false,
+                                    contentType: false,
+                                    success: function(response) {
+                                        alert(response);
+                                    }
+                                });
+                            }
+                        </script>
+                        <div class="py-2">
+                            <h5>Not an admin ? <span><a asp-controller="Home" asp-action="Index">Return to Home Page</a></span></h5>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="fw-bold mb-5">Admin</h2>
-                    </div>
-                </div>
-                <form>
-                    <div class="form-outline mb-4">
-                        <label class="form-label" asp-for="name"> Enter Name </label>
-                        <input asp-for="name" id="form3Example3" class="form-control" />
-                    </div>
-                    <div class="form-outline mb-4">
-                        <label class="form-label" for="form3Example4">Enter Password</label>
-                        <input type="password" id="form3Example4" class="form-control" />
-                    </div>
-                    <button type="submit" class="btn btn-primary px-5">
-                        Login
-                    </button>
-                </form>
-                <div class="py-2">
-                    <h5>Not an admin ? <span><a asp-controller="Home" asp-action="Index">Return to Home Page</a></span></h5>
                 </div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
-  <!-- Background image -->
+    <!-- Background image -->
 </section>
 <!-- Section: Design Block -->

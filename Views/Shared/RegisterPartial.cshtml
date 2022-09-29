@@ -1,173 +1,712 @@
-﻿@*@{
-    ViewData["Title"] = "Register";
-}
-@model Citizen_Portal.Models.User
-    <div class="m-4 border-radius-2" style="background-color:#cccccc">
-        <div class="p-2 d-flex flex-column justify-content-center align-items-center">
-            <div class="py-1">
-                <img class="circular-shadow radius-50 h-100p" src="~/lib/circular logo.png" alt="logo"/>
+@model Citizen_Portal.Models.Complainant
+@*@model Citizen_Portal.Models.ViewModels.InlandViewModel*@
+<div>
+    <form id="myForm" asp-controller="Complainant" asp-action="register" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <div class="col-md-6" style="margin-top:24px;">
+                @*<vc:input class-name="form-control" for-attribute="mobile_number" is-required=true validation=true />*@
+                <label asp-for="mobile_number"> Mobile Number <span style="color:red">*</span></label>
+                <input asp-for="mobile_number" class="form-control" required>
+                <span asp-validation-for="mobile_number" class="text-danger"></span>
             </div>
-            <div class="py-1 fw-bolder">
-                <h3>Register as a Citizen</h3>
-                ViewData["citizen_type"]
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="email">Email <span style="color:red">*</span></label>
+                <input asp-for="email" class="form-control" required>
+                <span asp-validation-for="email" class="text-danger"></span>
             </div>
-            <form class="d-flex flex-row w-80 justify-content-around" asp-controller="Complainant" asp-action="registerAs" method="post">
-                <div class="col-6">
-                    <select class="w-100" name="citizen_type">
-                        <option value="1" selected>In-Land Pakistani</option>
-                        <option value="2">Overseas Pakistani</option>
-                        <option value="3">Foreigner</option>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="name">Full Name <span style="color:red">*</span></label>
+                <input asp-for="name" class="form-control" required>
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="nic_number"> CNIC <span style="color:red;">*</span></label>
+                <input asp-for="nic_number" class="form-control" required>
+                <span asp-validation-for="nic_number" class="text-danger"></span>
+            </div>
+            @if (ViewData["citizen_type"] == "Over-Seas Pakistani")
+            {
+                <div class="col-md-6" style="margin-top:24px;">
+                    <label asp-for="abroad_country"> Foreign Country Name <span style="color:red;">*</span></label>
+                    <select asp-for="abroad_country" class="form-control" required>
+                        <option value="257">Afghanistan</option>
+                        <option value="258">Albania</option>
+                        <option value="259">Algeria</option>
+                        <option value="260">American Samoa</option>
+                        <option value="261">Andorra</option>
+                        <option value="262">Angola</option>
+                        <option value="263">Anguilla</option>
+                        <option value="264">Antarctica</option>
+                        <option value="265">Antigua and Barbuda</option>
+                        <option value="266">Argentina</option>
+                        <option value="267">Armenia</option>
+                        <option value="268">Aruba</option>
+                        <option value="269">Australia</option>
+                        <option value="270">Austria</option>
+                        <option value="271">Azerbaijan</option>
+                        <option value="272">Bahamas</option>
+                        <option value="273">Bahrain</option>
+                        <option value="274">Bangladesh</option>
+                        <option value="275">Barbados</option>
+                        <option value="276">Belarus</option>
+                        <option value="277">Belgium</option>
+                        <option value="278">Belize</option>
+                        <option value="279">Benin</option>
+                        <option value="280">Bermuda</option>
+                        <option value="281">Bhutan</option>
+                        <option value="282">Bolivia</option>
+                        <option value="283">Bosnia and Herzegovina</option>
+                        <option value="284">Botswana</option>
+                        <option value="285">Bouvet Island</option>
+                        <option value="286">Brazil</option>
+                        <option value="287">British Indian Ocean Territory</option>
+                        <option value="288">Brunei Darussalam</option>
+                        <option value="289">Bulgaria</option>
+                        <option value="290">Burkina Faso</option>
+                        <option value="291">Burundi</option>
+                        <option value="292">Cambodia</option>
+                        <option value="293">Cameroon</option>
+                        <option value="294">Canada</option>
+                        <option value="295">Cape Verde</option>
+                        <option value="296">Cayman Islands</option>
+                        <option value="297">Central African Republic</option>
+                        <option value="298">Chad</option>
+                        <option value="299">Chile</option>
+                        <option value="300">China</option>
+                        <option value="301">Christmas Island</option>
+                        <option value="302">Cocos (Keeling) Islands</option>
+                        <option value="303">Colombia</option>
+                        <option value="304">Comoros</option>
+                        <option value="305">Congo</option>
+                        <option value="306">Congo, the Democratic Republic of the</option>
+                        <option value="307">Cook Islands</option>
+                        <option value="308">Costa Rica</option>
+                        <option value="309">Cote D'Ivoire</option>
+                        <option value="310">Croatia</option>
+                        <option value="311">Cuba</option>
+                        <option value="312">Cyprus</option>
+                        <option value="313">Czech Republic</option>
+                        <option value="314">Denmark</option>
+                        <option value="315">Djibouti</option>
+                        <option value="316">Dominica</option>
+                        <option value="317">Dominican Republic</option>
+                        <option value="318">Ecuador</option>
+                        <option value="319">Egypt</option>
+                        <option value="320">El Salvador</option>
+                        <option value="321">Equatorial Guinea</option>
+                        <option value="322">Eritrea</option>
+                        <option value="323">Estonia</option>
+                        <option value="324">Ethiopia</option>
+                        <option value="325">Falkland Islands (Malvinas)</option>
+                        <option value="326">Faroe Islands</option>
+                        <option value="327">Fiji</option>
+                        <option value="328">Finland</option>
+                        <option value="329">France</option>
+                        <option value="330">French Guiana</option>
+                        <option value="331">French Polynesia</option>
+                        <option value="332">French Southern Territories</option>
+                        <option value="333">Gabon</option>
+                        <option value="334">Gambia</option>
+                        <option value="335">Georgia</option>
+                        <option value="336">Germany</option>
+                        <option value="337">Ghana</option>
+                        <option value="338">Gibraltar</option>
+                        <option value="339">Greece</option>
+                        <option value="340">Greenland</option>
+                        <option value="341">Grenada</option>
+                        <option value="342">Guadeloupe</option>
+                        <option value="343">Guam</option>
+                        <option value="344">Guatemala</option>
+                        <option value="345">Guinea</option>
+                        <option value="346">Guinea-Bissau</option>
+                        <option value="347">Guyana</option>
+                        <option value="348">Haiti</option>
+                        <option value="349">Heard Island and Mcdonald Islands</option>
+                        <option value="350">Holy See (Vatican City State)</option>
+                        <option value="351">Honduras</option>
+                        <option value="352">Hong Kong</option>
+                        <option value="353">Hungary</option>
+                        <option value="354">Iceland</option>
+                        <option value="355">India</option>
+                        <option value="356">Indonesia</option>
+                        <option value="357">Iran, Islamic Republic of</option>
+                        <option value="358">Iraq</option>
+                        <option value="359">Ireland</option>
+                        <option value="360">Israel</option>
+                        <option value="361">Italy</option>
+                        <option value="362">Jamaica</option>
+                        <option value="363">Japan</option>
+                        <option value="364">Jordan</option>
+                        <option value="365">Kazakhstan</option>
+                        <option value="366">Kenya</option>
+                        <option value="367">Kiribati</option>
+                        <option value="368">Korea, Democratic People's Republic of</option>
+                        <option value="369">Korea, Republic of</option>
+                        <option value="370">Kuwait</option>
+                        <option value="371">Kyrgyzstan</option>
+                        <option value="372">Lao People's Democratic Republic</option>
+                        <option value="373">Latvia</option>
+                        <option value="374">Lebanon</option>
+                        <option value="375">Lesotho</option>
+                        <option value="376">Liberia</option>
+                        <option value="377">Libyan Arab Jamahiriya</option>
+                        <option value="378">Liechtenstein</option>
+                        <option value="379">Lithuania</option>
+                        <option value="380">Luxembourg</option>
+                        <option value="381">Macao</option>
+                        <option value="382">Macedonia, the Former Yugoslav Republic of</option>
+                        <option value="383">Madagascar</option>
+                        <option value="384">Malawi</option>
+                        <option value="385">Malaysia</option>
+                        <option value="386">Maldives</option>
+                        <option value="387">Mali</option>
+                        <option value="388">Malta</option>
+                        <option value="389">Marshall Islands</option>
+                        <option value="390">Martinique</option>
+                        <option value="391">Mauritania</option>
+                        <option value="392">Mauritius</option>
+                        <option value="393">Mayotte</option>
+                        <option value="394">Mexico</option>
+                        <option value="395">Micronesia, Federated States of</option>
+                        <option value="396">Moldova, Republic of</option>
+                        <option value="397">Monaco</option>
+                        <option value="398">Mongolia</option>
+                        <option value="399">Montserrat</option>
+                        <option value="400">Morocco</option>
+                        <option value="401">Mozambique</option>
+                        <option value="402">Myanmar</option>
+                        <option value="403">Namibia</option>
+                        <option value="404">Nauru</option>
+                        <option value="405">Nepal</option>
+                        <option value="406">Netherlands</option>
+                        <option value="407">Netherlands Antilles</option>
+                        <option value="408">New Caledonia</option>
+                        <option value="409">New Zealand</option>
+                        <option value="410">Nicaragua</option>
+                        <option value="411">Niger</option>
+                        <option value="412">Nigeria</option>
+                        <option value="413">Niue</option>
+                        <option value="414">Norfolk Island</option>
+                        <option value="415">Northern Mariana Islands</option>
+                        <option value="416">Norway</option>
+                        <option value="417">Oman</option>
+                        <option value="419">Palau</option>
+                        <option value="420">Palestinian Territory, Occupied</option>
+                        <option value="421">Panama</option>
+                        <option value="422">Papua New Guinea</option>
+                        <option value="423">Paraguay</option>
+                        <option value="424">Peru</option>
+                        <option value="425">Philippines</option>
+                        <option value="426">Pitcairn</option>
+                        <option value="427">Poland</option>
+                        <option value="428">Portugal</option>
+                        <option value="429">Puerto Rico</option>
+                        <option value="430">Qatar</option>
+                        <option value="431">Reunion</option>
+                        <option value="432">Romania</option>
+                        <option value="433">Russian Federation</option>
+                        <option value="434">Rwanda</option>
+                        <option value="435">Saint Helena</option>
+                        <option value="436">Saint Kitts and Nevis</option>
+                        <option value="437">Saint Lucia</option>
+                        <option value="438">Saint Pierre and Miquelon</option>
+                        <option value="439">Saint Vincent and the Grenadines</option>
+                        <option value="440">Samoa</option>
+                        <option value="441">San Marino</option>
+                        <option value="442">Sao Tome and Principe</option>
+                        <option value="443">Saudi Arabia</option>
+                        <option value="444">Senegal</option>
+                        <option value="445">Serbia and Montenegro</option>
+                        <option value="446">Seychelles</option>
+                        <option value="447">Sierra Leone</option>
+                        <option value="448">Singapore</option>
+                        <option value="449">Slovakia</option>
+                        <option value="450">Slovenia</option>
+                        <option value="451">Solomon Islands</option>
+                        <option value="452">Somalia</option>
+                        <option value="453">South Africa</option>
+                        <option value="454">South Georgia and the South Sandwich Islands</option>
+                        <option value="455">Spain</option>
+                        <option value="456">Sri Lanka</option>
+                        <option value="457">Sudan</option>
+                        <option value="458">Suriname</option>
+                        <option value="459">Svalbard and Jan Mayen</option>
+                        <option value="460">Swaziland</option>
+                        <option value="461">Sweden</option>
+                        <option value="462">Switzerland</option>
+                        <option value="463">Syrian Arab Republic</option>
+                        <option value="464">Taiwan, Province of China</option>
+                        <option value="465">Tajikistan</option>
+                        <option value="466">Tanzania, United Republic of</option>
+                        <option value="467">Thailand</option>
+                        <option value="468">Timor-Leste</option>
+                        <option value="469">Togo</option>
+                        <option value="470">Tokelau</option>
+                        <option value="471">Tonga</option>
+                        <option value="472">Trinidad and Tobago</option>
+                        <option value="473">Tunisia</option>
+                        <option value="474">Turkey</option>
+                        <option value="475">Turkmenistan</option>
+                        <option value="476">Turks and Caicos Islands</option>
+                        <option value="477">Tuvalu</option>
+                        <option value="478">Uganda</option>
+                        <option value="479">Ukraine</option>
+                        <option value="480">United Arab Emirates</option>
+                        <option value="481">United Kingdom</option>
+                        <option value="482">United States</option>
+                        <option value="483">United States Minor Outlying Islands</option>
+                        <option value="484">Uruguay</option>
+                        <option value="485">Uzbekistan</option>
+                        <option value="486">Vanuatu</option>
+                        <option value="487">Venezuela</option>
+                        <option value="488">Viet Nam</option>
+                        <option value="489">Virgin Islands, British</option>
+                        <option value="490">Virgin Islands, U.s.</option>
+                        <option value="491">Wallis and Futuna</option>
+                        <option value="492">Western Sahara</option>
+                        <option value="493">Yemen</option>
+                        <option value="494">Zambia</option>
+                        <option value="495">Zimbabwe</option>
                     </select>
+                    <span asp-validation-for="abroad_country" class="text-danger"></span>
                 </div>
-                <div class="col-4">
-                    <button class="w-100 border-0 btn-outline-none" type="submit">Continue</button>
+                <div class="col-md-6" style="margin-top:24px;">
+                    <label asp-for="reason_abroad"> Reason To Live Abroad <span style="color:red;">*</span></label>
+                    <input asp-for="reason_abroad" class="form-control" required>
+                    <span asp-validation-for="reason_abroad" class="text-danger"></span>
                 </div>
-            </form>
-        </div>
-        <div>
-            <form asp-controller="Complaints" asp-action="register">
-            <div class="">
-                <div class="p-10p d-flex flex-wrap align-items-center justify-content-between">
-                                    <div class="col-md-4 d-flex px-md-1 align-items-center my-3">
-                                        <label class="col-md-4 col-sm-5" asp-for="Area_Code">Area Code<span class="text-danger px-1">*</span></label>
-                                        <input type="hidden" id="area_country_code_id" name="area_country_code_id" value="1">
-                                        <select class="col-md-8 col-sm-7 p-6p border-0 radius-4p" asp-for="Area_Code">
-                                            <option value="92" data-country-id="1"> Pakistan  (92) </option>
-                                        </select>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3">
-                        <label class="col-md-5 col-sm-5" asp-for="MobileNumber">Mobile Number<span class="text-danger px-1">*</span></label>
-                        <input class="col-md-7 col-sm-7 p-6p border-0 radius-4p" asp-for="MobileNumber" type="tel" placeholder="03341234567"/>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3 justify-content-end">
-                        <label class="col-md-3 col-sm-5" asp-for="Email">Email<span class="text-danger px-1">*</span></label>
-                        <input class="col-md-8 col-sm-7 p-6p border-0 radius-4p" asp-for="Email" type="email" placeholder="some@web.com" required/>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3">
-                        <label class="col-md-5" asp-for="Name">Name<span class="text-danger px-1">*</span></label>
-                        <input class="col-md-7 p-6p border-0 radius-4p" type="text" asp-for="Name" placeholder="Full Name" maxlength="20" minlength="4" required class="form-control" value=""/>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3 justify-content-end">
-                        <label class="col-md-3" asp-for="CNIC">CNIC<span class="text-danger px-1">*</span></label>
-                        <input class="col-md-8 p-6p border-0 radius-4p" type="text" asp-for="CNIC" placeholder="" required class="form-control" value="" maxlength="15"/>
-                        <input type="hidden" name="country_id" id="country_id" placeholder="" required class="form-control" value="1"/>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3">
-                        <label class="col-md-5" asp-for="DOB">Date of Birth<span class="text-danger px-1">*</span></label>
-                        <input class="col-md-7 p-6p border-0 radius-4p" type="date" asp-for="DOB" max="2010-05-25"  required class="form-control" value=""/>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3 justify-content-end">
-                        <label class="col-md-3" asp-for="Gender">Gender<span class="text-danger px-1">*</span></label>
-                        <select class="col-md-8 p-6p border-0 radius-4p" asp-for="Gender" required class="form-control"  >
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3">
-                        <label class="col-md-5" asp-for="TelephoneNumber">Telephone Number<span class="text-danger px-1">*</span></label>
-                        <input class="col-md-7 p-6p border-0 radius-4p" type="tel" asp-for="TelephoneNumber" placeholder="xxxxxxx" class="specialchar form-control" maxlength="12" minlength="5" value=""/>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3 justify-content-end">
-                        <label class="col-md-3" asp-for="Password">Password<span class="text-danger px-1">*</span></label>
-                        <input class="col-md-8 p-6p border-0 radius-4p" type="password" asp-for="Password"  minlength="5" placeholder="*******" required class="form-control" value=""/>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3">
-                        <label class="col-md-5" asp-for="postalCode">Postal Code<span class="text-danger px-1">*</span></label>
-                        <input class="col-md-7 p-6p border-0 radius-4p" type="text" asp-for="postalCode" maxlength="5" placeholder="00000" required class="form-control" value=""/>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3 justify-content-end">
-                        <label class="col-md-3" asp-for="Province">Province<span class="text-danger px-1">*</span></label>
-                        <select class="col-md-8 p-6p border-0 radius-4p" asp-for="Province" required class="form-control" onchange="getDistricts()">
-                            <option value="1">Khyber Pakhtunkhwa | KP</option>
-                            <option value="2">Punjab | PU</option>
-                            <option value="3">Sindh | SD</option>
-                            <option value="4">Balochistan | BL</option>
-                            <option value="6">Federal Govt | IS</option>
-                            <option value="7">Gilgit-Baltistan | GB</option>
-                            <option value="8">Azad Jammu and Kashmir | AK</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3">
-                        <label class="col-md-5" asp-for="District">District<span class="text-danger px-1">*</span></label>
-                        <select class="col-md-7 p-6p border-0 radius-4p" asp-for="District" required class="form-control" onchange="getTehsils()">
-                            <option value="8" >Abbottabad</option>
-                            <option value="138" >Bajaur</option>
-                            <option value="4" >Bannu</option>
-                            <option value="9" >Battagram</option>
-                            <option value="10" >Buner</option>
-                            <option value="3" >Charsadda</option>
-                            <option value="11" >Chitral Lower</option>
-                            <option value="351" >Chitral Upper</option>
-                            <option value="5" >Dera Ismail Khan</option>
-                            <option value="7" >Dir Lower</option>
-                            <option value="6" >Dir Upper</option>
-                            <option value="12" >Hangu</option>
-                            <option value="13" >Haripur</option>
-                            <option value="14" >Karak</option>
-                            <option value="140" >Khyber</option>
-                            <option value="15" >Kohat</option>
-                            <option value="26" >Kohistan Lower</option>
-                            <option value="16" >Kohistan Upper</option>
-                            <option value="198" >Kolai Pallas</option>
-                            <option value="141" >Kurram</option>
-                            <option value="17" >Lakki Marwat</option>
-                            <option value="18" >Malakand</option>
-                            <option value="19" >Mansehra</option>
-                            <option value="2" >Mardan</option>
-                            <option value="142" >Mohmand</option>
-                            <option value="143" >North Waziristan</option>
-                            <option value="20" >Nowshera</option>
-                            <option value="144" >Orakzai</option>
-                            <option value="1"  selected >Peshawar</option>
-                            <option value="21" >Shangla</option>
-                            <option value="145" >South Waziristan</option>
-                            <option value="22" >Swabi</option>
-                            <option value="23" >Swat</option>
-                            <option value="24" >Tank</option>
-                            <option value="25" >Tor Ghar</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 d-flex px-md-1 align-items-center my-3 justify-content-end">
-                        <label class="col-md-3" asp-for="Tehsil">Tehsil<span class="text-danger px-1">*</span></label>
-                        <select class="col-md-8 p-6p border-0 radius-4p" asp-for="Tehsil" class="form-control">
-                            <option value="279">Badahber</option>
-                            <option value="280">Chamkani</option>
-                            <option value="281">City</option>
-                            <option value="282">Hassan Khel</option>
-                            <option value="283">Mathra</option>
-                            <option value="711">Pishtakhara</option>
-                            <option value="712">Shah Alam</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12 d-flex px-md-1 align-items-center my-3">
-                        <label class="col-md-2" asp-for="Address">Address<span class="text-danger px-1">*</span></label>
-                        <textarea class="col-md-10 p-6p border-0 radius-4p" type="text" asp-for="Address" maxlength="100" class="form-control" placeholder="Enter address here"></textarea>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="contact100-form-checkbox">
-                            <input class="input-checkbox100" id="ckb1" type="checkbox" value="1" name="terms_agreement">
-                            <label for="ckb1" style="color:black; display: inline-block;">
-                            <u>I Agree to the Terms and Conditions</u>
-                            </label>
-                            <label onclick="showTermsModal()" style="color:rgb(6, 113, 214); display: inline-block;">
-                            <u>Read</u>
-                            </label>
-                        </div>
-                        <div class="text-danger font-italic">
-                            Note: You must agree to the terms and conditions in order to continue
-                        </div>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <button class="btn btn-warning py-5p px-25p" type="submit" onclick="">Register</button>
-                    </div>
-                    <div class="text-center col-md-12">
-                        <a class="text-black txt1 text-decoration-none" href="https://web.citizenportal.gov.pk/login" onclick="showloader()">Already have an account? <b>Login here</b></a>
-                    </div>
-                    <div class="p-20p"></div>
+            }
+            else if (ViewData["citizen_type"] == "Foreigner Citizen")
+            {
+                <div class="col-md-6" style="margin-top:24px;">
+                    <label asp-for="reason_visit_pakistan"> Reason To Visit Pakistan <span style="color:red;">*</span></label>
+                    <input asp-for="reason_visit_pakistan" class="form-control" required>
+                    <span asp-validation-for="reason_visit_pakistan" class="text-danger"></span>
+                </div>
+            }
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="nationality">Nationality <span style="color:red">*</span></label>
+                <select asp-for="nationality" class="form-control" required>
+                    @if (ViewData["citizen_type"] != "Foreigner Citizen")
+                    {
+                        <option value="1">Pakistan</option>
+                    }
+                    else
+                    {
+                        <option value="257">Afghanistan</option>
+                        <option value="258">Albania</option>
+                        <option value="259">Algeria</option>
+                        <option value="260">American Samoa</option>
+                        <option value="261">Andorra</option>
+                        <option value="262">Angola</option>
+                        <option value="263">Anguilla</option>
+                        <option value="264">Antarctica</option>
+                        <option value="265">Antigua and Barbuda</option>
+                        <option value="266">Argentina</option>
+                        <option value="267">Armenia</option>
+                        <option value="268">Aruba</option>
+                        <option value="269">Australia</option>
+                        <option value="270">Austria</option>
+                        <option value="271">Azerbaijan</option>
+                        <option value="272">Bahamas</option>
+                        <option value="273">Bahrain</option>
+                        <option value="274">Bangladesh</option>
+                        <option value="275">Barbados</option>
+                        <option value="276">Belarus</option>
+                        <option value="277">Belgium</option>
+                        <option value="278">Belize</option>
+                        <option value="279">Benin</option>
+                        <option value="280">Bermuda</option>
+                        <option value="281">Bhutan</option>
+                        <option value="282">Bolivia</option>
+                        <option value="283">Bosnia and Herzegovina</option>
+                        <option value="284">Botswana</option>
+                        <option value="285">Bouvet Island</option>
+                        <option value="286">Brazil</option>
+                        <option value="287">British Indian Ocean Territory</option>
+                        <option value="288">Brunei Darussalam</option>
+                        <option value="289">Bulgaria</option>
+                        <option value="290">Burkina Faso</option>
+                        <option value="291">Burundi</option>
+                        <option value="292">Cambodia</option>
+                        <option value="293">Cameroon</option>
+                        <option value="294">Canada</option>
+                        <option value="295">Cape Verde</option>
+                        <option value="296">Cayman Islands</option>
+                        <option value="297">Central African Republic</option>
+                        <option value="298">Chad</option>
+                        <option value="299">Chile</option>
+                        <option value="300">China</option>
+                        <option value="301">Christmas Island</option>
+                        <option value="302">Cocos (Keeling) Islands</option>
+                        <option value="303">Colombia</option>
+                        <option value="304">Comoros</option>
+                        <option value="305">Congo</option>
+                        <option value="306">Congo, the Democratic Republic of the</option>
+                        <option value="307">Cook Islands</option>
+                        <option value="308">Costa Rica</option>
+                        <option value="309">Cote D'Ivoire</option>
+                        <option value="310">Croatia</option>
+                        <option value="311">Cuba</option>
+                        <option value="312">Cyprus</option>
+                        <option value="313">Czech Republic</option>
+                        <option value="314">Denmark</option>
+                        <option value="315">Djibouti</option>
+                        <option value="316">Dominica</option>
+                        <option value="317">Dominican Republic</option>
+                        <option value="318">Ecuador</option>
+                        <option value="319">Egypt</option>
+                        <option value="320">El Salvador</option>
+                        <option value="321">Equatorial Guinea</option>
+                        <option value="322">Eritrea</option>
+                        <option value="323">Estonia</option>
+                        <option value="324">Ethiopia</option>
+                        <option value="325">Falkland Islands (Malvinas)</option>
+                        <option value="326">Faroe Islands</option>
+                        <option value="327">Fiji</option>
+                        <option value="328">Finland</option>
+                        <option value="329">France</option>
+                        <option value="330">French Guiana</option>
+                        <option value="331">French Polynesia</option>
+                        <option value="332">French Southern Territories</option>
+                        <option value="333">Gabon</option>
+                        <option value="334">Gambia</option>
+                        <option value="335">Georgia</option>
+                        <option value="336">Germany</option>
+                        <option value="337">Ghana</option>
+                        <option value="338">Gibraltar</option>
+                        <option value="339">Greece</option>
+                        <option value="340">Greenland</option>
+                        <option value="341">Grenada</option>
+                        <option value="342">Guadeloupe</option>
+                        <option value="343">Guam</option>
+                        <option value="344">Guatemala</option>
+                        <option value="345">Guinea</option>
+                        <option value="346">Guinea-Bissau</option>
+                        <option value="347">Guyana</option>
+                        <option value="348">Haiti</option>
+                        <option value="349">Heard Island and Mcdonald Islands</option>
+                        <option value="350">Holy See (Vatican City State)</option>
+                        <option value="351">Honduras</option>
+                        <option value="352">Hong Kong</option>
+                        <option value="353">Hungary</option>
+                        <option value="354">Iceland</option>
+                        <option value="355">India</option>
+                        <option value="356">Indonesia</option>
+                        <option value="357">Iran, Islamic Republic of</option>
+                        <option value="358">Iraq</option>
+                        <option value="359">Ireland</option>
+                        <option value="360">Israel</option>
+                        <option value="361">Italy</option>
+                        <option value="362">Jamaica</option>
+                        <option value="363">Japan</option>
+                        <option value="364">Jordan</option>
+                        <option value="365">Kazakhstan</option>
+                        <option value="366">Kenya</option>
+                        <option value="367">Kiribati</option>
+                        <option value="368">Korea, Democratic People's Republic of</option>
+                        <option value="369">Korea, Republic of</option>
+                        <option value="370">Kuwait</option>
+                        <option value="371">Kyrgyzstan</option>
+                        <option value="372">Lao People's Democratic Republic</option>
+                        <option value="373">Latvia</option>
+                        <option value="374">Lebanon</option>
+                        <option value="375">Lesotho</option>
+                        <option value="376">Liberia</option>
+                        <option value="377">Libyan Arab Jamahiriya</option>
+                        <option value="378">Liechtenstein</option>
+                        <option value="379">Lithuania</option>
+                        <option value="380">Luxembourg</option>
+                        <option value="381">Macao</option>
+                        <option value="382">Macedonia, the Former Yugoslav Republic of</option>
+                        <option value="383">Madagascar</option>
+                        <option value="384">Malawi</option>
+                        <option value="385">Malaysia</option>
+                        <option value="386">Maldives</option>
+                        <option value="387">Mali</option>
+                        <option value="388">Malta</option>
+                        <option value="389">Marshall Islands</option>
+                        <option value="390">Martinique</option>
+                        <option value="391">Mauritania</option>
+                        <option value="392">Mauritius</option>
+                        <option value="393">Mayotte</option>
+                        <option value="394">Mexico</option>
+                        <option value="395">Micronesia, Federated States of</option>
+                        <option value="396">Moldova, Republic of</option>
+                        <option value="397">Monaco</option>
+                        <option value="398">Mongolia</option>
+                        <option value="399">Montserrat</option>
+                        <option value="400">Morocco</option>
+                        <option value="401">Mozambique</option>
+                        <option value="402">Myanmar</option>
+                        <option value="403">Namibia</option>
+                        <option value="404">Nauru</option>
+                        <option value="405">Nepal</option>
+                        <option value="406">Netherlands</option>
+                        <option value="407">Netherlands Antilles</option>
+                        <option value="408">New Caledonia</option>
+                        <option value="409">New Zealand</option>
+                        <option value="410">Nicaragua</option>
+                        <option value="411">Niger</option>
+                        <option value="412">Nigeria</option>
+                        <option value="413">Niue</option>
+                        <option value="414">Norfolk Island</option>
+                        <option value="415">Northern Mariana Islands</option>
+                        <option value="416">Norway</option>
+                        <option value="417">Oman</option>
+                        <option value="419">Palau</option>
+                        <option value="420">Palestinian Territory, Occupied</option>
+                        <option value="421">Panama</option>
+                        <option value="422">Papua New Guinea</option>
+                        <option value="423">Paraguay</option>
+                        <option value="424">Peru</option>
+                        <option value="425">Philippines</option>
+                        <option value="426">Pitcairn</option>
+                        <option value="427">Poland</option>
+                        <option value="428">Portugal</option>
+                        <option value="429">Puerto Rico</option>
+                        <option value="430">Qatar</option>
+                        <option value="431">Reunion</option>
+                        <option value="432">Romania</option>
+                        <option value="433">Russian Federation</option>
+                        <option value="434">Rwanda</option>
+                        <option value="435">Saint Helena</option>
+                        <option value="436">Saint Kitts and Nevis</option>
+                        <option value="437">Saint Lucia</option>
+                        <option value="438">Saint Pierre and Miquelon</option>
+                        <option value="439">Saint Vincent and the Grenadines</option>
+                        <option value="440">Samoa</option>
+                        <option value="441">San Marino</option>
+                        <option value="442">Sao Tome and Principe</option>
+                        <option value="443">Saudi Arabia</option>
+                        <option value="444">Senegal</option>
+                        <option value="445">Serbia and Montenegro</option>
+                        <option value="446">Seychelles</option>
+                        <option value="447">Sierra Leone</option>
+                        <option value="448">Singapore</option>
+                        <option value="449">Slovakia</option>
+                        <option value="450">Slovenia</option>
+                        <option value="451">Solomon Islands</option>
+                        <option value="452">Somalia</option>
+                        <option value="453">South Africa</option>
+                        <option value="454">South Georgia and the South Sandwich Islands</option>
+                        <option value="455">Spain</option>
+                        <option value="456">Sri Lanka</option>
+                        <option value="457">Sudan</option>
+                        <option value="458">Suriname</option>
+                        <option value="459">Svalbard and Jan Mayen</option>
+                        <option value="460">Swaziland</option>
+                        <option value="461">Sweden</option>
+                        <option value="462">Switzerland</option>
+                        <option value="463">Syrian Arab Republic</option>
+                        <option value="464">Taiwan, Province of China</option>
+                        <option value="465">Tajikistan</option>
+                        <option value="466">Tanzania, United Republic of</option>
+                        <option value="467">Thailand</option>
+                        <option value="468">Timor-Leste</option>
+                        <option value="469">Togo</option>
+                        <option value="470">Tokelau</option>
+                        <option value="471">Tonga</option>
+                        <option value="472">Trinidad and Tobago</option>
+                        <option value="473">Tunisia</option>
+                        <option value="474">Turkey</option>
+                        <option value="475">Turkmenistan</option>
+                        <option value="476">Turks and Caicos Islands</option>
+                        <option value="477">Tuvalu</option>
+                        <option value="478">Uganda</option>
+                        <option value="479">Ukraine</option>
+                        <option value="480">United Arab Emirates</option>
+                        <option value="481">United Kingdom</option>
+                        <option value="482">United States</option>
+                        <option value="483">United States Minor Outlying Islands</option>
+                        <option value="484">Uruguay</option>
+                        <option value="485">Uzbekistan</option>
+                        <option value="486">Vanuatu</option>
+                        <option value="487">Venezuela</option>
+                        <option value="488">Viet Nam</option>
+                        <option value="489">Virgin Islands, British</option>
+                        <option value="490">Virgin Islands, U.s.</option>
+                        <option value="491">Wallis and Futuna</option>
+                        <option value="492">Western Sahara</option>
+                        <option value="493">Yemen</option>
+                        <option value="494">Zambia</option>
+                        <option value="495">Zimbabwe</option>
+                    }
+                </select>
+                <span asp-validation-for="nationality" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="residential_address">Residential Address <span style="color:red">*</span></label>
+                <input asp-for="residential_address" class="form-control" required>
+                <span asp-validation-for="residential_address" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="date_of_birth">Date of Birth <span style="color:red">*</span></label>
+                <input asp-for="date_of_birth" type="date" class="form-control" required>
+                <span asp-validation-for="date_of_birth" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="gender">Gender <span style="color:red">*</span></label>
+                <select asp-for="gender" class="form-control" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span asp-validation-for="gender" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="telephone_number">landline</label>
+                <input asp-for="telephone_number" class="form-control">
+                <span asp-validation-for="telephone_number" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="password">Password <span style="color:red">*</span></label>
+                <input asp-for="password" type="password" class="form-control" required>
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label> Confirm Password <span style="color:red">*</span></label>
+                <input id="confirm_password" type="password" class="form-control" required>
+            </div>
+            @if (ViewData["citizen_type"] != "Foreigner Citizen")
+            {
+                <div class="col-md-6" style="margin-top:24px;">
+                    <label asp-for="province">Province <span style="color:red">*</span></label>
+                    <select asp-for="province" class="form-control" required>
+                        <option value="1">Khyber Pakhtunkhwa | KP</option>
+                        <option value="2">Punjab | PU</option>
+                        <option value="3">Sindh | SD</option>
+                        <option value="4">Balochistan | BL</option>
+                        <option value="6">Federal Govt | IS</option>
+                        <option value="7">Gilgit-Baltistan | GB</option>
+                        <option value="8">Azad Jammu and Kashmir | AK</option>
+                    </select>
+                    <span asp-validation-for="province" class="text-danger"></span>
+                </div>
+                <div class="col-md-6" style="margin-top:24px;">
+                    <label asp-for="district">District <span style="color:red">*</span></label>
+                    <select asp-for="district" class="form-control" required>
+                        <option value="8">Abbottabad</option>
+                        <option value="138">Bajaur</option>
+                        <option value="4">Bannu</option>
+                        <option value="9">Battagram</option>
+                        <option value="10">Buner</option>
+                        <option value="3">Charsadda</option>
+                        <option value="11">Chitral Lower</option>
+                        <option value="351">Chitral Upper</option>
+                        <option value="5">Dera Ismail Khan</option>
+                        <option value="7">Dir Lower</option>
+                        <option value="6">Dir Upper</option>
+                        <option value="12">Hangu</option>
+                        <option value="13">Haripur</option>
+                        <option value="14">Karak</option>
+                        <option value="140">Khyber</option>
+                        <option value="15">Kohat</option>
+                        <option value="26">Kohistan Lower</option>
+                        <option value="16">Kohistan Upper</option>
+                        <option value="198">Kolai Pallas</option>
+                        <option value="141">Kurram</option>
+                        <option value="17">Lakki Marwat</option>
+                        <option value="18">Malakand</option>
+                        <option value="19">Mansehra</option>
+                        <option value="2">Mardan</option>
+                        <option value="142">Mohmand</option>
+                        <option value="143">North Waziristan</option>
+                        <option value="20">Nowshera</option>
+                        <option value="144">Orakzai</option>
+                        <option value="1" selected="">Peshawar</option>
+                        <option value="21">Shangla</option>
+                        <option value="145">South Waziristan</option>
+                        <option value="22">Swabi</option>
+                        <option value="23">Swat</option>
+                        <option value="24">Tank</option>
+                        <option value="25">Tor Ghar</option>
+                    </select>
+                    <span asp-validation-for="district" class="text-danger"></span>
+                </div>
+                <div class="col-md-6" style="margin-top:24px;">
+                    <label asp-for="tehsil">Tehsil <span style="color:red">*</span></label>
+                    <select asp-for="tehsil" class="form-control" required>
+                        <option value="279">Badahber</option>
+                        <option value="280">Chamkani</option>
+                        <option value="281">City</option>
+                        <option value="282">Hassan Khel</option>
+                        <option value="283">Mathra</option>
+                        <option value="711">Pishtakhara</option>
+                        <option value="712">Shah Alam</option>
+                    </select>
+                    <span asp-validation-for="tehsil" class="text-danger"></span>
+                </div>
+            }
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="permanent_address">Permanent Address <span style="color:red">*</span></label>
+                <input asp-for="permanent_address" class="form-control" required />
+                <span asp-validation-for="permanent_address" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="profile_image"> Profile Image <span style="color:red">*</span></label>
+                <input asp-for="profile_image" class="form-control" type="file" required />
+                <span asp-validation-for="profile_image" class="text-danger"></span>
+            </div>
+            <div class="col-md-12" style="margin-top:24px;">
+                <div>
+                    <input asp-for="term_accepted" type="checkbox">
+                    <label asp-for="term_accepted" > I Agree to the Terms and Conditions</label>
+                    <span asp-validation-for="term_accepted" class="text-danger"></span>
                 </div>
             </div>
-                                                <input type="hidden" name="_token" value="fapLIgcU49QBeh8BKDHo8UjFvfJjuLeaG4aRyTem">
-        </form>
+            <div class="col-md-12 text-center">
+                <button class="btn btn-success" type="submit" onclick="AjaxFormSubmit()"> Register </button>
+            </div>
+        </div>
+    </form>
+    <div class="text-center col-md-12">
+        Already have an account? <a style="color:black" asp-controller="Complainant" asp-action="login"><b>Login here</b></a>
     </div>
+    <script type="text/javascript">
+        function AjaxFormSubmit() {
+            if ($("#password").val() === $("#confirm_password").val()) {
+                var data = new FormData();
+
+                data.append("mobile_number", $("#mobile_number").val());
+                data.append("email", $("#email").val());
+                data.append("name", $("#name").val());
+                data.append("nic_number", $("#nic_number").val());
+                data.append("abroad_country", $("#abroad_country").val());
+                data.append("reason_abroad", $("#reason_abroad").val());
+                data.append("reason_visit_pakistan", $("#reason_visit_pakistan").val());
+                data.append("nationality", $("#nationality").val());
+                data.append("date_of_birth", $("#date_of_birth").val());
+                data.append("residential_address", $("#residential_address").val());
+                data.append("gender", $("#gender").val());
+                data.append("telephone_number", $("#telephone_number").val());
+                data.append("password", $("#password").val());
+                data.append("province", $("#province").val());
+                data.append("district", $("#district").val());
+                data.append("tehsil", $("#tehsil").val());
+                data.append("permanent_address", $("#permanent_address").val());
+                data.append("term_accepted", $('#term_accepted').is(":checked"));
+
+                var files = $("#profile_image").get(0).files;
+                for (var i = 0; i < files.length; i++) {
+                    data.append("profile_image", files[i]);
+                }
+
+                $.ajax({
+                    type: 'POST',
+                    url: $("#myForm").attr("action"),
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        alert("Data Added Successfully");
+                    }
+                });
+            }
+            else {
+                alert("confirm password does not match password");
+            }
+        }
+    </script>
 </div>
-*@

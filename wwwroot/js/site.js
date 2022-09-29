@@ -3,11 +3,11 @@
 
 // Write your JavaScript code.
 
-$document.ready(function() {
-    $get("#loginButton").click(function () {
-        $get("/Home/LoginPartial", function (result) {
-            alert(result)
-            //$get("#LoginInfo").html(result)
-        })
-    })
-})
+//$document.ready(function() {
+//    $get("#loginButton").click(function () {
+//        $get("/Home/LoginPartial", function (result) {
+//            alert(result)
+//            //$get("#LoginInfo").html(result)
+//        })
+//    })
+//})

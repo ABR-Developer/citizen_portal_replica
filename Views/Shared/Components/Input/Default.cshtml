@@ -1,0 +1,11 @@
+﻿@if(@ViewBag.isRequired){
+    @*<label asp-for="@ViewBag.ForAttribute"> @ViewBag.Label <span style="color:red"> * </span></label>*@
+    @*<input type="@ViewBag.type" class="@ViewBag.ClassName" asp-for="@Model" required/>*@
+}
+else{
+    <label for="@ViewBag.ForAttribute"> @ViewBag.Label </label>
+    <input type="@ViewBag.type" class="@ViewBag.ClassName" for="@ViewBag.ForAttribute"/>
+}
+@if(@ViewBag.validation){
+    <div asp-validation-for="@ViewBag.ForAtrribute"></div>
+}

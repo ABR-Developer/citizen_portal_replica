@@ -1,28 +1,32 @@
 ﻿@model Citizen_Portal.Models.Complainee
 <div>
-    <form asp-controller="Complainee" asp-action="register" method="post">
+    <form id="myForm" asp-controller="Complainee" asp-action="register" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="row">
             <div class="col-md-6" style="margin-top:24px;">
-                <label asp-for="nationality">Nationality <span style="color:red">*</span></label>
-                <select asp-for="nationality" class="form-control" required>
-                    <option value="1">Pakistan</option>
-                </select>
+                <label asp-for="office_landline_number"> Office Landline Number <span style="color:red">*</span></label>
+                <input asp-for="office_landline_number" class="form-control" required>
+                <span asp-validation-for="office_landline_number" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="email">Email <span style="color:red">*</span></label>
+                <input asp-for="email" class="form-control" required>
+                <span asp-validation-for="email" class="text-danger"></span>
             </div>
             <div class="col-md-6" style="margin-top:24px;">
                 <label asp-for="name">Full Name <span style="color:red">*</span></label>
                 <input asp-for="name" class="form-control" required>
+                <span asp-validation-for="name" class="text-danger"></span>
             </div>
             <div class="col-md-6" style="margin-top:24px;">
-                <label asp-for="office_landline_number"> Landline Number <span style="color:red">*</span></label>
-                <input asp-for="office_landline_number" class="form-control" required>
+                <label asp-for="nic_number"> CNIC <span style="color:red;">*</span></label>
+                <input asp-for="nic_number" class="form-control" required>
+                <span asp-validation-for="nic_number" class="text-danger"></span>
             </div>
             <div class="col-md-6" style="margin-top:24px;">
-                <label asp-for="cnic">CNIC <span style="color:red; margin-top:24px;">*</span></label>
-                <input asp-for="cnic" class="form-control" required>
-            </div>
-            <div class="col-md-6" style="margin-top:24px;">
-                <label asp-for="office_address">Office Address <span style="color:red">*</span></label>
+                <label asp-for="office_address"> Office Address <span style="color:red">*</span></label>
                 <input asp-for="office_address" class="form-control" required>
+                <span asp-validation-for="office_address" class="text-danger"></span>
             </div>
             <div class="col-md-6" style="margin-top:24px;">
                 <label asp-for="gender">Gender <span style="color:red">*</span></label>
@@ -31,18 +35,23 @@
                     <option value="Female">Female</option>
                     <option value="Other">Other</option>
                 </select>
+                <span asp-validation-for="gender" class="text-danger"></span>
             </div>
-            <div class="col-md-6" id="email_div" style="margin-top:24px;">
-                <label asp-for="email">Email <span style="color:red">*</span></label>
-                <input asp-for="email" class="form-control" required>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="working_field"> Working Field <span style="color:red">*</span></label>
+                <select asp-for="working_field" class="form-control" required>
+                    <vc:select-field />
+                </select>
+                <span asp-validation-for="working_field" class="text-danger"></span>
             </div>
-            <div class="col-md-6" id="password_div" style="margin-top:24px;">
+            <div class="col-md-6" style="margin-top:24px;">
                 <label asp-for="password">Password <span style="color:red">*</span></label>
                 <input asp-for="password" type="password" class="form-control" required>
+                <span asp-validation-for="password" class="text-danger"></span>
             </div>
-            <div class="col-md-6" id="confirm_password_div" style="margin-top:24px;">
-                <label asp-for="confirm_password">Confirm Password <span style="color:red">*</span></label>
-                <input asp-for="confirm_password" type="password" class="form-control" required>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label> Confirm Password <span style="color:red">*</span></label>
+                <input id="confirm_password" type="password" class="form-control" required>
             </div>
             <div class="col-md-6" style="margin-top:24px;">
                 <label asp-for="province">Province <span style="color:red">*</span></label>
@@ -55,48 +64,118 @@
                     <option value="7">Gilgit-Baltistan | GB</option>
                     <option value="8">Azad Jammu and Kashmir | AK</option>
                 </select>
+                <span asp-validation-for="province" class="text-danger"></span>
             </div>
             <div class="col-md-6" style="margin-top:24px;">
-                <label asp-for="working_field">Field <span style="color:red">*</span></label>
-                <select asp-for="working_field" class="form-control" required>
-                    <option value="1">Health</option>
-                    <option value="2">Education</option>
-                    <option value="3">Land Revenue</option>
-                    <option value="4">Agriculture</option>
-                    <option value="6">Disaster / Energy</option>
-                    <option value="7">Law and Order</option>
-                    <option value="8">Transport</option>
-                    <option value="8">Media</option>
-                    <option value="8">Nadra</option>
-                    <option value="8">FBR</option>
-                    <option value="8">Immigration and Passport</option>
-                    <option value="8">FIA / Cyber Crime</option>
-                    <option value="8">Banking</option>
-                    <option value="8">Railway</option>
-                    <option value="8">Pakistan Post</option>
-                    <option value="8">Banking</option>
-                    <option value="8">Pakistan Telecommunication Authority (PTA)</option>
-                    <option value="8">Pakistan Post</option>
-                    <option value="8">Pakistan Post</option>
+                <label asp-for="district">District <span style="color:red">*</span></label>
+                <select asp-for="district" class="form-control" required>
+                    <option value="8">Abbottabad</option>
+                    <option value="138">Bajaur</option>
+                    <option value="4">Bannu</option>
+                    <option value="9">Battagram</option>
+                    <option value="10">Buner</option>
+                    <option value="3">Charsadda</option>
+                    <option value="11">Chitral Lower</option>
+                    <option value="351">Chitral Upper</option>
+                    <option value="5">Dera Ismail Khan</option>
+                    <option value="7">Dir Lower</option>
+                    <option value="6">Dir Upper</option>
+                    <option value="12">Hangu</option>
+                    <option value="13">Haripur</option>
+                    <option value="14">Karak</option>
+                    <option value="140">Khyber</option>
+                    <option value="15">Kohat</option>
+                    <option value="26">Kohistan Lower</option>
+                    <option value="16">Kohistan Upper</option>
+                    <option value="198">Kolai Pallas</option>
+                    <option value="141">Kurram</option>
+                    <option value="17">Lakki Marwat</option>
+                    <option value="18">Malakand</option>
+                    <option value="19">Mansehra</option>
+                    <option value="2">Mardan</option>
+                    <option value="142">Mohmand</option>
+                    <option value="143">North Waziristan</option>
+                    <option value="20">Nowshera</option>
+                    <option value="144">Orakzai</option>
+                    <option value="1" selected="">Peshawar</option>
+                    <option value="21">Shangla</option>
+                    <option value="145">South Waziristan</option>
+                    <option value="22">Swabi</option>
+                    <option value="23">Swat</option>
+                    <option value="24">Tank</option>
+                    <option value="25">Tor Ghar</option>
                 </select>
+                <span asp-validation-for="district" class="text-danger"></span>
             </div>
-            <div class="col-md-9">
-                <br>
-                <div class="contact100-form-checkbox">
-                    <input asp-for="term_accepted" class="input-checkbox100">
-                    <label for="ckb1" style="color:black; display: inline-block;"><u>I Agree to the Terms and Conditions</u></label>
-                    <label onclick="showTermsModal()" style="color:rgb(6, 113, 214); display: inline-block;"><u>Read</u></label>
-                </div>
-                <div class="text-danger font-italic">
-                    Note: You must agree to the terms and conditions in order to continue
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="tehsil">Tehsil <span style="color:red">*</span></label>
+                <select asp-for="tehsil" class="form-control" required>
+                    <option value="279">Badahber</option>
+                    <option value="280">Chamkani</option>
+                    <option value="281">City</option>
+                    <option value="282">Hassan Khel</option>
+                    <option value="283">Mathra</option>
+                    <option value="711">Pishtakhara</option>
+                    <option value="712">Shah Alam</option>
+                </select>
+                <span asp-validation-for="tehsil" class="text-danger"></span>
+            </div>
+            <div class="col-md-6" style="margin-top:24px;">
+                <label asp-for="profile_image"> Profile Image <span style="color:red">*</span></label>
+                <input asp-for="profile_image" class="form-control" type="file" required />
+                <span asp-validation-for="profile_image" class="text-danger"></span>
+            </div>
+            <div class="col-md-12" style="margin-top:24px;">
+                <div>
+                    <input asp-for="term_accepted" type="checkbox">
+                    <label asp-for="term_accepted"> I Agree to the Terms and Conditions</label>
+                    <span asp-validation-for="term_accepted" class="text-danger"></span>
                 </div>
             </div>
             <div class="col-md-12 text-center">
-                <button class="btn btn-success" type="submit" onclick="">Register</button>
-            </div>
-            <div class="text-center col-md-12">
-                <br>Already have an account? <a style="color:black" class="txt1" href="https://web.citizenportal.gov.pk/login <view-source:https://web.citizenportal.gov.pk/login>" onclick="showloader()"><b>Login here</b></a>
+                <button class="btn btn-success" type="submit" onclick="AjaxFormSubmit()"> Register </button>
             </div>
         </div>
     </form>
+    <div class="text-center col-md-12">
+        Already have an account? <a style="color:black" asp-controller="Complainant" asp-action="login"><b>Login here</b></a>
+    </div>
+    <script type="text/javascript">
+        function AjaxFormSubmit() {
+            if ($("#password").val() === $("#confirm_password").val()) {
+                var data = new FormData();
+
+                data.append("office_landline_number", $("#office_landline_number").val());
+                data.append("email", $("#email").val());
+                data.append("name", $("#name").val());
+                data.append("nic_number", $("#nic_number").val());
+                data.append("office_address", $("#office_address").val());
+                data.append("gender", $("#gender").val());
+                data.append("password", $("#password").val());
+                data.append("province", $("#province").val());
+                data.append("district", $("#district").val());
+                data.append("tehsil", $("#tehsil").val());
+                data.append("term_accepted", $('#term_accepted').is(":checked"));
+
+                var files = $("#profile_image").get(0).files;
+                for (var i = 0; i < files.length; i++) {
+                    data.append("profile_image", files[i]);
+                }
+
+                $.ajax({
+                    type: 'POST',
+                    url: $("#myForm").attr("action"),
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        alert("Data Added Successfully");
+                    }
+                });
+            }
+            else {
+                alert("confirm password does not match password");
+            }
+        }
+    </script>
 </div>

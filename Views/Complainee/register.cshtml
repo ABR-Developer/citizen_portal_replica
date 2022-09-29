@@ -1,0 +1,31 @@
+﻿@section head_style
+    {
+    <link rel="stylesheet" href="/css/site.css" />
+}
+    <div>
+        <div class="d-flex flex-wrap">
+            <div class="col-12 p-3">
+                <div class="d-flex justify-content-evenly bg-success b-radius-10p p-2">
+                    <div>
+                        <a asp-controller="Home" asp-action="Index">
+                            <img class="circular-shadow radius-50" Style="height:75px; width:75px" src="/images/circular logo.png" alt="main logo" />
+                        </a>
+                    </div>
+                    <div class="align-self-center">
+                        <h2 class="text-light">Welcome, Dear @ViewData["citizen_type"]!</h2>
+                    </div>
+                </div>
+                <div class="m-3 p-4 shadow position-relative">
+                    <div style="height:100%;width:100%; position:absolute;left:0;top:0;z-index:-1;background-image: url('/images/form background.jpg');background-repeat: no-repeat;background-position: center;filter: blur(4px);"></div>
+                    <div>
+                        <div class="text-center fw-bolder">
+                            <h1>Registration Form</h1>
+                        </div>
+                        <div class="">
+                            <partial name="memberRegisterPartial" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

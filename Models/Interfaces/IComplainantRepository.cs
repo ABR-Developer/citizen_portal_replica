@@ -7,5 +7,7 @@
         void Delete(int Id);
         List<Complainant> GetAll();
         Complainant GetById(int Id);
+        bool IsExist(Complainant complainant);
+        int getId(Complainant complainant);
     }
 }

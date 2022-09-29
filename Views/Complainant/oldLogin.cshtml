@@ -1,0 +1,166 @@
+﻿@*<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="XpD49QZKcMLRjZ3qWHn6fgKotwJoyYjx6wE6WNcJ">
+
+    <title>Pakistan Citizen&#039;s Portal</title>
+
+    <link rel="shortcut icon" href="https://web.citizenportal.gov.pk/images/portal.png" />
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/fonts/iconic/css/material-design-iconic-font.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/css/util.css">
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/mainstyles/css/main.css">
+</head>
+<body>*@
+<div>
+    <div class="d-flex flex-wrap">
+		<div class="col-md-4 p-5 top-0 left-0">
+			<div class="d-flex flex-row justify-content-center">
+				<a href="https://web.citizenportal.gov.pk">
+                    <img class="circular-shadow radius-50" height="150px" src="~/lib/circular logo.png" alt="main logo"/>
+                </a>
+			</div>
+			<div class="p-4">
+				<p class="text-secondary fs-5">Welcome, Dear Citizen / Member!</p>
+                <div class="">Login as a : </div>
+                <form class="px-4 text-success" method="post" asp-controller="Complainant" asp-action="login">
+                    <select class="w-100" name="user_type">
+                        <option value="0" selected disabled>Select</option>
+                        <option value="2">Member</option>
+                        <option value="1">Citizen</option>
+                    </select>
+                    <button type="submit" class="outline-none border-0 w-100">Login</button>
+                </form>
+                <div class="">register as a : </div>
+                <form class="px-4 text-success" method="post" asp-controller="Complainant" asp-action="registerAs">
+                    <select class="w-100" name="user_type">
+                        <option value="0" selected disabled>Select</option>
+                        <optgroup label="Citizen">
+                            <option value="1">Inland-Pakistani</option>
+                            <option value="2">overseas-Pakistani</option>
+                            <option value="3">Foreigner</option>
+                        </optgroup>
+                        <option value="4">Member</option>
+                    </select>
+                    <button type="submit" class="outline-none border-0 w-100">Register</button>
+                </form>
+				<b><a class="text-primary fs-5 text-decoration-none" href="https://web.citizenportal.gov.pk/contact-us">Need Help ? Contact Us </a></b>
+			</div>
+            <a asp-controller="complainant" asp-action="complaints">Complaints</a>
+			<div class="d-flex align-content-center justify-content-center">
+                <div class="col-md-4 text-secondary fs-3">Follow us :</div>
+                <div class="col-md-8 d-flex">
+                    <div class="col-md-4">
+       				    <a href="https://www.facebook.com/PMDUPakistan/" class="text-decoration-none text-secondary fs-1"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="col-md-4">
+    				    <a href="https://www.facebook.com/PMDUPakistan/" class="text-decoration-none text-secondary fs-1"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="col-md-4">
+    				    <a href="https://www.facebook.com/PMDUPakistan/" class="text-decoration-none text-secondary fs-1"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="col-md-8" style="background-image: url('/lib/BACKGROUND1.jpg');">
+            <div class="m-4">
+                <div class="p-2 d-flex flex-column justify-content-center align-items-center">
+                    <div class="py-1">
+                        <img class="circular-shadow radius-50 h-100p" src="~/lib/circular logo.png" alt="logo"/>
+                    </div>
+                    <div class="py-1 fw-bolder">
+                        <h3>Register as a Citizen</h3>
+                    </div>
+                </div>
+                <div class="p-5">
+                    @if (ViewData["Partial_View_Name"] == "loginPartial") {
+                        <partial name="loginPartial" />
+                    }
+                    @if (ViewData["Partial_View_Name"] == "registerPartial") {
+                        <partial name="registerPartial"/>
+                    }
+                    @if (ViewData["Partial_View_Name"] == "inlandRegisterPartial") {
+                        <partial name="inlandRegisterPartial"/>
+                    }
+                    @if (ViewData["Partial_View_Name"] == "overseasRegisterPartial") {
+                        <partial name="overseasRegisterPartial"/>
+                    }
+                    @if (ViewData["Partial_View_Name"] == "foreignerRegisterPartial") {
+                        <partial name="foreignerRegisterPartial"/>
+                    }
+                    @if (ViewData["Partial_View_Name"] == "memberRegisterPartial") {
+                        <partial name="memberRegisterPartial"/>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*SectionWriters footer_script{
+    <script type="text/javascript" src="/js/site.js"></script>
+}
+
+@*</body>
+
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/bootstrap/js/popper.js"></script>
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/vendor/tilt/tilt.jquery.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/mainstyles/js/main.js"></script>
+    
+        <script>
+        var banned = ['XXX'];
+          var aTags = document.getElementsByTagName("input");
+          for (var i=0;i<aTags.length;i++){
+              aTags[i].addEventListener('keyup', function(e) {
+              var text = $(this).val();
+              for (var x=0;x<banned.length;x++) {
+                  if (text.search(banned[x]) !== -1) {
+                      alert(banned[x]+' is not allowed!');
+                  }
+                  var regExp = new RegExp(banned[x]);
+                  text = text.replace(regExp,'');
+              }
+              $(this).val(text);
+              },false);
+          }
+        </script>
+
+        <script>
+        var banned = [ '!','@@','#','$','%','^','&','-','_','=',',','<','>','.','{' ,'}','|'];
+          var aTags = document.getElementsByClassName("specialchar");
+          for (var i=0;i<aTags.length;i++){
+              aTags[i].addEventListener('keyup', function(e) {
+              var text = $(this).val();
+              for (var x=0;x<banned.length;x++) {
+                  if (text.search(banned[x]) !== -1) {
+
+                  }
+                  var regExp = new RegExp(banned[x]);
+                  text = text.replace(regExp,'');
+              }
+              $(this).val(text);
+              },false);
+          }
+        </script>
+</html>
+*@

@@ -1,215 +1,31 @@
-<!doctype html>
-<html lang="en">
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="DwJQH2mRp8a7GmSrosu9oER27hMiUej6x2rVWL2N">
-
-    <title>Pakistan Citizen&#039;s Portal</title>
-
-    
-    <link rel="shortcut icon" href="https://web.citizenportal.gov.pk/images/portal.png" />
-  <!--===============================================================================================-->
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/bootstrap/css/bootstrap.min.css">
-  <!--===============================================================================================-->
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-  <!--===============================================================================================-->
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/fonts/iconic/css/material-design-iconic-font.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
-
-  <!--===============================================================================================-->
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/animate/animate.css">
-  <!--===============================================================================================-->
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/css-hamburgers/hamburgers.min.css">
-  <!--===============================================================================================-->
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/animsition/css/animsition.min.css">
-  <!--===============================================================================================-->
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/select2/select2.min.css">
-  <!--===============================================================================================-->
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/daterangepicker/daterangepicker.css">
-  <!--===============================================================================================-->
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/css/util.css">
-  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://web.citizenportal.gov.pk/assetsmaterial/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
-
-
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-
-    <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-  
-
-            <style>
-.switch-toggle {
-   float: left;
-   background: #242729;
+@section head_style
+    {
+    <link rel="stylesheet" href="/css/site.css" />
 }
-.switch-toggle input {
-  position: absolute;
-  opacity: 0;
-}
-.switch-toggle input + label {
-  padding: 7px;
-  float:left;
-  color: #fff;
-  cursor: pointer;
-}
-.switch-toggle input:checked + label {
-  background: green;
-}
-h4{
-  font-size: 1.8rem;
-}
-</style>
-</head>
-<body>
-	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/pmdu-bg.jpg');">
-			<div class="wrap-login100">
-				<span class="login100-form-logo"><img src="https://web.citizenportal.gov.pk/images/portal.png" style="width: 100%;"></span>
-				<span class="login100-form-title p-b-34 p-t-27">Register as New Member</span>
-                <div class="row">
-                    <div class="col-md-12" style="background: #3dca6d;margin-top: 10px;border-radius: 10px;box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.32);">
-                        <a href="https://web.citizenportal.gov.pk/inland-register">
-                            <h4 style="color:white">Inland Citizen<br>  پاکستانی شہری<i class="fa fa-arrow-circle-right pull-right" style="color:white"></i></h4>  
+    <div>
+        <div class="d-flex flex-wrap">
+            <div class="col-12 p-3">
+                <div class="d-flex justify-content-evenly bg-success b-radius-10p p-2">
+                    <div>
+                        <a asp-controller="Home" asp-action="Index">
+                            <img class="circular-shadow radius-50" Style="height:75px; width:75px" src="/images/circular logo.png" alt="main logo" />
                         </a>
                     </div>
-                    <div class="col-md-12"  style="background: #94c8ff;margin-top: 10px;border-radius: 10px;box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.32);">
-                        <a href="https://web.citizenportal.gov.pk/overseas-register">
-                            <h4 style="color:white">Overseas Pakistani<br> بیرون ملک پاکستانی<i class="fa fa-arrow-circle-right pull-right" style="color:white"></i></h4>
-                        </a>
-                    </div>
-                    <div class="col-md-12"  style="background:#ffbf00;margin-top: 10px;border-radius: 10px;box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.32);">
-                        <a href="https://web.citizenportal.gov.pk/foreigner-register">  <h4 style="color:white">Foreigner<br> غیر ملکی<i class="fa fa-arrow-circle-right pull-right" style="color:white"></i></h4> </a>
+                    <div class="align-self-center">
+                        <h2 class="text-light">Welcome, Dear @ViewData["citizen_type"]!</h2>
                     </div>
                 </div>
-                <div class="text-center">
-					<a class="txt1" href="https://web.citizenportal.gov.pk/sign-in" style="color:black">
-						Already have an account ? <b style="color:red">Login Here</b>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-<!-- <div class="modal" tabindex="-1" role="dialog" id="modalfederal" style="background-color: #0000008c;
-    width: 100%;
-    max-height: 100%;">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="text-align:center">
-        <h5 class="modal-title" style="width:100%;color:red">Attention / 'متوجہ ہوں</h5>
-      </div>
-      <div class="modal-body">
-      <div class="row">
-        <div class="col-md-12">
-          <h6>Respected Citizen! For the time being, This facility is available only for the citizen of federal (Islamabad). However, you can download the Citizens portal Mobile application to use this service from Google Play and Apple App store.</h6>
+                <div class="m-3 p-4 shadow position-relative">
+                    <div style="height:100%;width:100%; position:absolute;left:0;top:0;z-index:-1;background-image: url('/images/form background.jpg');background-repeat: no-repeat;background-position: center;filter: blur(4px);"></div>
+                    <div>
+                        <div class="text-center fw-bolder">
+                            <h1>Registration Form</h1>
+                        </div>
+                        <div class="">
+                            <partial name="registerPartial" view-data="ViewData" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="col-md-12">
-            <h5>قابل احترام شہری ، یہ سہولت صرف فیڈرل (اسلام آباد) کے شہری کے لئے دستیاب ہے۔ تاہم ، آپ موبائل ایپ اسٹور سے اس سروس کو استعمال کرنے کے لئے سٹیزنز پورٹل موبائل ایپلی کیشن ڈاؤن لوڈ کرسکتے ہیں۔</h5>
-        </div>
-
-
-
-      </div>
-
-      </div>
-      <div class="modal-footer" style="height:100%">
-        <div class="row" style="width:100%;margin: 0px;">
-          <div class="col-md-12"style="margin-top:5px;">
-        <a  class="btn btn-primary" id="" style="width:100%" onclick="closefederal()">OK</a>
-      </div>
-
     </div>
-  </div>
-    </div>
-  </div>
-</div>
- -->
-</body>
-
-<!--===============================================================================================-->
-	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/bootstrap/js/popper.js"></script>
-	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-<script src="https://web.citizenportal.gov.pk/assetsmaterial/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
-	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/daterangepicker/moment.min.js"></script>
-	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="https://web.citizenportal.gov.pk/loginstyles/js/main.js"></script>
-
-  <script src="https://web.citizenportal.gov.pk/notify/bootstrap-notify.js"></script>
-  <script src="https://web.citizenportal.gov.pk/notify/bootstrap-notify.min.js"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js" ></script>
-    <!-- <script>
-$("#modalfederal").show();
-
-function closefederal()
-{
-$("#modalfederal").hide();
-}
-</script> -->
-
-  <script>
-
-                </script>
-    <script>
-        function showloader()
-        {
-           $.LoadingOverlay("show");
-        }
-    </script>
-
-    <!-- <script>
-    var banned = [''];
-      var aTags = document.getElementsByTagName("input");
-      for (var i=0;i<aTags.length;i++){
-          aTags[i].addEventListener('keyup', function(e) {
-          var text = $(this).val();
-          for (var x=0;x<banned.length;x++) {
-              if (text.search(banned[x]) !== -1) {
-
-              }
-              var regExp = new RegExp(banned[x]);
-              text = text.replace(regExp,'');
-          }
-          $(this).val(text);
-          },false);
-      }
-    </script> -->
-
-    <!-- <script>
-    var banned = [ '!','@@','#','$','%','^','&','-','_','=',',','<','>','.','{' ,'}','|'];
-      var aTags = document.getElementsByClassName("specialchar");
-      for (var i=0;i<aTags.length;i++){
-          aTags[i].addEventListener('keyup', function(e) {
-          var text = $(this).val();
-          for (var x=0;x<banned.length;x++) {
-              if (text.search(banned[x]) !== -1) {
-
-              }
-              var regExp = new RegExp(banned[x]);
-              text = text.replace(regExp,'');
-          }
-          $(this).val(text);
-          },false);
-      }
-    </script> -->
-</html>
